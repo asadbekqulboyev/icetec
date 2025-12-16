@@ -1,0 +1,24 @@
+.promo {
+  padding-top: 96px;
+  &_items {
+    margin-top: 81px;
+  }
+  &_item {
+    width: calc(33.33% - 28.5px);
+    &_tite {
+      color: #000;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    p {
+      color: #87929a;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-top: 29px;
+    }
+  }
+}

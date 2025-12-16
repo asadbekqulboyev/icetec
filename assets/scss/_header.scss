@@ -1,0 +1,81 @@
+.header {
+  padding: 32px 0;
+  background: #fff;
+  .logo_img {
+    @media (max-width: 1460px) {
+      width: 240px;
+    }
+  }
+  &_nav {
+    gap: 16px 0;
+    margin-top: -11px;
+  }
+  &_menu {
+    gap: 30px;
+    @media (max-width: 1460px) {
+      gap: 16px;
+    }
+  }
+  ul {
+    gap: 32px;
+    list-style: none;
+    a {
+      color: #000;
+      text-decoration: none;
+      transition: all 0.2s linear;
+      @media (max-width: 1460px) {
+        font-size: 14px;
+      }
+
+      &:hover {
+        color: #f60;
+      }
+    }
+  }
+  .nav_list {
+    flex-wrap: wrap-reverse;
+    gap: 16px 32px;
+    max-width: 59%;
+    @media (max-width: 1460px) {
+      gap: 16px 24px;
+    }
+  }
+  .search_input {
+    background: #edf3f6;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 11px 12px 9px;
+    outline: none;
+    border: none;
+  }
+  &_actions {
+    display: flex;
+    gap: 57px;
+    margin-bottom: -11px;
+    @media (max-width: 1740px) {
+      gap: 30px;
+    }
+
+    .cart_icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #f60;
+    }
+    ul {
+      gap: 15px;
+      li {
+        flex: 0 0 auto;
+        width: fit-content;
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

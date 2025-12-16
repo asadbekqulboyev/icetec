@@ -1,0 +1,56 @@
+.hero {
+  .my_swiper {
+    img {
+      width: 100%;
+    }
+    .swiper-slide {
+      .hero_info {
+        position: absolute;
+        left: 0;
+        z-index: 3;
+        bottom: 149px;
+        left: 156px;
+        .top_text {
+          color: #fff;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          position: relative;
+          top: 0;
+          margin-left: calc(100% + 75px);
+        }
+        h1 {
+          color: #fff;
+          font-size: 64px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        .button {
+          margin-top: 52px;
+        }
+      }
+    }
+  }
+  .container {
+    position: relative;
+  }
+  .custom_pagination {
+    gap: 9px;
+    position: absolute;
+    bottom: 81px;
+    left: 189px;
+  }
+  .custom_pagination .custom_bullet {
+    width: 59px;
+    height: 7px;
+    background: #fff;
+    flex: 0 0 auto;
+    z-index: 2;
+    cursor: pointer;
+    &.active{
+        background: #F60;
+    }
+  }
+}
