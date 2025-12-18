@@ -1,6 +1,10 @@
 .categories {
   padding-top: 96px;
-  &_items {
+  @media (max-width: 1200px) {
+    padding-top: 66px;
+  }
+  @media (max-width: 768px) {
+    padding-top: 58px;
   }
   &_title {
     color: #000;
@@ -9,5 +13,23 @@
     font-weight: 500;
     line-height: normal;
     margin-bottom: 23px;
+    @media (max-width: 992px) {
+      margin-bottom: 15px;
+    }
+  }
+  &_items {
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+  }
+  &_item {
+    width: calc(33.33% - 10px);
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
   }
 }

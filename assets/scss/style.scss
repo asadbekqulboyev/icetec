@@ -5,6 +5,9 @@
 @import "promo";
 @import "tops";
 @import "intro";
+@import "news";
+@import "galery";
+@import "footer";
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +30,9 @@ body {
   padding: 0 32px;
   max-width: 1920px;
   margin: 0 auto;
+  @media (max-width: 992px) {
+    padding: 0 22px;
+  }
 }
 .flex {
   display: flex;
@@ -105,7 +111,15 @@ body {
   padding: 19px 74px;
   color: #fff;
   text-decoration: none;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   display: inline-block;
+  @media (max-width: 768px) {
+    padding: 12px 36px 12px 37px;
+    color: #fff;
+  }
 }
 .section_title {
   color: #000;
@@ -113,4 +127,10 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  @media (max-width: 1400px) {
+    font-size: 48px;
+  }
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
 }

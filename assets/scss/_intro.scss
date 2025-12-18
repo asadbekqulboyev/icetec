@@ -1,5 +1,11 @@
 .intro {
   padding: 96px 0 0;
+  @media (max-width: 1200px) {
+    padding-top: 66px;
+  }
+  @media (max-width: 768px) {
+    padding-top: 58px;
+  }
   .section_title {
     margin-bottom: 32px;
   }
@@ -22,6 +28,16 @@
       justify-content: center;
       align-items: center;
       background: #000000;
+      @media (max-width: 768px) {
+        width: 45px;
+        height: 45px;
+      }
+      img {
+        @media (max-width: 768px) {
+          width: 18px;
+          transform: translateX(2px);
+        }
+      }
     }
   }
 }

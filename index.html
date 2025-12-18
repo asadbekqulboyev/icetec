@@ -18,12 +18,8 @@
           <img src="assets/images/logo.svg" alt="Icetec logo" class="logo_img">
         </a>
         <nav class="header_nav flex column">
-          <ul class="nav_list flex a_center">
-
-          </ul>
           <div class="header_menu flex a_end end">
-            <ul class="nav_list flex a_center">
-
+            <ul class="nav_list flex a_center ">
               <li><a href="#">Куртки</a></li>
               <li><a href="#">Штаны</a></li>
               <li><a href="#">Комбинезоны</a></li>
@@ -35,31 +31,43 @@
               <li><a href="#">Женщинам</a></li>
               <li><a href="#">Мужчинам</a></li>
               <li><a href="#">Детям</a></li>
+              <div class="exit_menu">
+                <svg fill="#000000" width="20px" height="50px" viewBox="0 0 256 256" id="Flat"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M202.82861,197.17188a3.99991,3.99991,0,1,1-5.65722,5.65624L128,133.65723,58.82861,202.82812a3.99991,3.99991,0,0,1-5.65722-5.65624L122.343,128,53.17139,58.82812a3.99991,3.99991,0,0,1,5.65722-5.65624L128,122.34277l69.17139-69.17089a3.99991,3.99991,0,0,1,5.65722,5.65624L133.657,128Z" />
+                </svg>
+              </div>
             </ul>
             <!-- Right actions -->
             <div class="header_actions flex a_center">
               <input type="text" class="search_input" placeholder="Поиск">
-              <ul class="flex a_center">
+              <ul class="flex a_center mobile_actions">
+                <li class="only_mobile"> <a href="#"><img src="assets/images/search.svg" alt=""></a></li>
                 <li><a href="#"><img src="assets/images/heart.svg" alt=""></a></li>
                 <li><a href="#" class="cart_icon"><img src="assets/images/user.svg" alt=""></a></li>
                 <li><a href="#" class="cart_icon"><img src="assets/images/cart.svg" alt=""></a></li>
               </ul>
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
+
           </div>
         </nav>
 
-
-
       </div>
     </header>
-
     <main>
       <section class="hero">
         <div class="container">
           <div class="swiper my_swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="assets/images/hero_banner.png" alt="">
+                <img src="assets/images/hero_banner.png" alt="" class="descop">
+                <img src="assets/images/hero_mobile.png" alt="" class="mobile">
                 <div class="hero_info">
                   <p class="top_text">
                     Тенологии. <br>
@@ -75,7 +83,8 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="assets/images/hero_banner.png" alt="">
+                <img src="assets/images/hero_banner.png" alt="" class="descop">
+                <img src="assets/images/hero_mobile.png" alt="" class="mobile">
                 <div class="hero_info">
                   <p class="top_text">
                     Тенологии. <br>
@@ -83,15 +92,16 @@
                     Доступность.
                   </p>
                   <h1 class="hero_title">
-                    Новая
-                    коллекция
+                    Новая <br>
+                    коллекция <br>
                     зима 2025/26
                   </h1>
                   <a href="#" class="button">Подробнее</a>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="assets/images/hero_banner.png" alt="">
+                <img src="assets/images/hero_banner.png" alt="" class="descop">
+                <img src="assets/images/hero_mobile.png" alt="" class="mobile">
                 <div class="hero_info">
                   <p class="top_text">
                     Тенологии. <br>
@@ -99,15 +109,16 @@
                     Доступность.
                   </p>
                   <h1 class="hero_title">
-                    Новая
-                    коллекция
+                    Новая <br>
+                    коллекция <br>
                     зима 2025/26
                   </h1>
                   <a href="#" class="button">Подробнее</a>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="assets/images/hero_banner.png" alt="">
+                <img src="assets/images/hero_banner.png" alt="" class="descop">
+                <img src="assets/images/hero_mobile.png" alt="" class="mobile">
                 <div class="hero_info">
                   <p class="top_text">
                     Тенологии. <br>
@@ -115,8 +126,8 @@
                     Доступность.
                   </p>
                   <h1 class="hero_title">
-                    Новая
-                    коллекция
+                    Новая <br>
+                    коллекция <br>
                     зима 2025/26
                   </h1>
                   <a href="#" class="button">Подробнее</a>
@@ -226,8 +237,74 @@
           </a>
         </div>
       </section>
+      <section class="news">
+        <div class="container">
+          <h2 class="section_title"> Важные <br>
+            новости Icetec</h2>
+          <div class="news_banner">
+            <div class="news_info">
+              <h2 class="section_title news_title">
+                Новинки. Технологии. <br>
+                Стиль.
+              </h2>
+              <a href="#" class="button">Подписаться</a>
+            </div>
+            <img src="assets/images/news.png" alt="" class="desctop">
+            <img src="assets/images/news_mobile.png" alt="" class="mobile">
+          </div>
+        </div>
+      </section>
+      <section class="galery">
+        <div class="container">
+          <h2 class="section_title">Icetec <br>в Instagram</h2>
+          <div class="galery_items flex between">
+            <div class="galery_item flex">
+              <img src="assets/images/gallery1.png" alt="">
+            </div>
+            <div class="galery_item flex">
+              <img src="assets/images/gallery2.png" alt="">
+            </div>
+            <div class="galery_item flex">
+              <img src="assets/images/gallery3.png" alt="">
+            </div>
+            <div class="galery_item flex">
+              <img src="assets/images/gallery4.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_top flex between a_end">
+          <a href="#" class="footer_logo">
+            <img src="assets/images/footer_logo.svg" alt="">
+          </a>
+          <div class="footer_menu flex column">
+            <ul class="flex a_center">
+              <li><a href="#">Женщинам</a></li>
+              <li><a href="#">Мужчинам</a></li>
+              <li><a href="#">Детям</a></li>
+            </ul>
+            <ul class="flex a_center">
+              <li><a href="#">Куртки</a></li>
+              <li><a href="#">Штаны</a></li>
+              <li><a href="#">Комбинезоны</a></li>
+              <li><a href="#">Термобельё</a></li>
+              <li><a href="#">Аксессуары</a></li>
+            </ul>
+          </div>
+          <div class="footer_menu">
+            <ul class="flex a_center">
+              <li><a href="#">Женщинам</a></li>
+              <li><a href="#">Мужчинам</a></li>
+              <li><a href="#">Детям</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_bottom">© Icetec 2025 / Все права защищены</div>
+      </div>
+    </footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./assets/js/main.js"></script>
