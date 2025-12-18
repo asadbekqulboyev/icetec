@@ -1,0 +1,113 @@
+.news_page {
+  padding-top: 14px;
+  @media (max-width: 768px) {
+    padding-top: 0;
+  }
+  .container {
+    position: relative;
+    gap: 20px;
+    @media (max-width: 992px) {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  .bg_ictec {
+    width: calc(100% - 64px);
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    z-index: -1;
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+  .breadcrumbs_items {
+    gap: 5px;
+    color: #a9a9ad;
+    padding-top: 10px;
+    @media (max-width: 768px) {
+      padding-top: 0;
+    }
+    li {
+      list-style: none;
+    }
+    a {
+      color: #a9a9ad;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-decoration: none;
+    }
+  }
+  &_content {
+    max-width: 971px;
+    position: relative;
+    margin: 0 auto;
+  }
+  &_items {
+    margin-top: 39px;
+    gap: 42px;
+    @media (max-width: 768px) {
+      gap: 41px;
+      margin-top: 16px;
+    }
+  }
+  &_item {
+    gap: 20px;
+    @media (max-width: 768px) {
+      align-items: center;
+      gap: 30px;
+      flex-direction: column;
+    }
+    img {
+      width: 100%;
+      max-width: 293px;
+      @media (max-width: 768px) {
+        max-width: 100%;
+      }
+    }
+    &_info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &_title {
+      color: #000;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    p {
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-top: 10px;
+      @media (max-width: 768px) {
+        margin-top: 25px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+    .date {
+      color: #a9a9ad;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      padding-top: 5px;
+      @media (max-width: 768px) {
+        margin-top: 19px;
+      }
+    }
+  }
+}
