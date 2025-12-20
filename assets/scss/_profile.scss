@@ -1,0 +1,32 @@
+.profile {
+  &_items {
+    gap: 50px;
+    padding-top: 44px;
+  }
+  &_item {
+    gap: 20px;
+    &_img {
+      width: 100%;
+      max-width: 136px;
+      img {
+        width: 100%;
+      }
+    }
+    .profile_info_prices {
+      gap: 11px;
+      align-items: flex-end;
+      margin-bottom: 2px;
+      .old_price {
+        font-size: 14px;
+        text-decoration-line: line-through;
+      }
+      .new_price {
+        color: #f60;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+}
