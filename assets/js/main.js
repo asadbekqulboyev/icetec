@@ -75,3 +75,17 @@ document.addEventListener("click", function (e) {
 
   like.classList.toggle("active");
 });
+
+const thumbs = new Swiper(".product_thumbs", {
+  direction: "vertical",
+  slidesPerView: 4,
+  spaceBetween: 28,
+});
+
+const main = new Swiper(".product_main", {
+  spaceBetween: 10,
+  slidesPerView: 1,
+  thumbs: {
+    swiper: thumbs,
+  },
+});
