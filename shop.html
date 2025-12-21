@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICETEC</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header">
+      <div class="container flex between a_center">
+        <a href="#" class="header_logo flex a_center">
+          <img src="assets/images/logo.svg" alt="Icetec logo" class="logo_img">
+        </a>
+        <nav class="header_nav flex column">
+          <div class="header_menu flex a_end end">
+            <ul class="nav_list flex a_center ">
+              <li><a href="#">Куртки</a></li>
+              <li><a href="#">Штаны</a></li>
+              <li><a href="#">Комбинезоны</a></li>
+              <li><a href="#">Термобельё</a></li>
+              <li><a href="#">Аксессуары</a></li>
+              <li><a href="#">О бренде</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Женщинам</a></li>
+              <li><a href="#">Мужчинам</a></li>
+              <li><a href="#">Детям</a></li>
+              <div class="exit_menu">
+                <svg fill="#000000" width="20px" height="50px" viewBox="0 0 256 256" id="Flat"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M202.82861,197.17188a3.99991,3.99991,0,1,1-5.65722,5.65624L128,133.65723,58.82861,202.82812a3.99991,3.99991,0,0,1-5.65722-5.65624L122.343,128,53.17139,58.82812a3.99991,3.99991,0,0,1,5.65722-5.65624L128,122.34277l69.17139-69.17089a3.99991,3.99991,0,0,1,5.65722,5.65624L133.657,128Z" />
+                </svg>
+              </div>
+            </ul>
+            <!-- Right actions -->
+            <div class="header_actions flex a_center">
+              <input type="text" class="search_input" placeholder="Поиск">
+              <ul class="flex a_center mobile_actions">
+                <li class="only_mobile"> <a href="#"><img src="assets/images/search.svg" alt=""></a></li>
+                <li><a href="#"><img src="assets/images/heart.svg" alt=""></a></li>
+                <li><a href="#" class="cart_icon"><img src="assets/images/user.svg" alt=""></a></li>
+                <li><a href="#" class="cart_icon"><img src="assets/images/cart.svg" alt=""></a></li>
+              </ul>
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+          </div>
+        </nav>
+
+      </div>
+    </header>
+    <main>
+      <section class="shop">
+        <div class="container">
+          <img src="assets/images/bg_icetec.png" alt="" class="shop_bg">
+          <div class="shop_top flex ">
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs_items flex a_center">
+                <li><a href="#">Главная </a></li>
+                /
+                <li><a href="#">Корзина</a></li>
+
+              </ul>
+            </div>
+            <h2 class="section_title">Корзина</h2>
+          </div>
+          <div class="shop_content flex between">
+
+            <!-- CART LIST -->
+            <div class="cart_list">
+
+              <div class="cart_item flex">
+                <img src="./assets/images/categories2.png" class="cart_img" />
+                <div class="cart_content">
+                  <div class="cart_info">
+                    <div class="cart_info_top">
+                      <p class="old_price">24 990 ₽</p>
+                      <p class="price">14 990 ₽</p>
+                    </div>
+                    <p class="cart_title">Куртка зимняя с капюшоном</p>
+                  </div>
+                  <div class="counter flex a_center">
+                    <button class="count_btn minus">−</button>
+                    <span class="count">1</span>
+                    <button class="count_btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cart_item flex">
+                <img src="assets/images/tops1.png" class="cart_img" />
+                <div class="cart_content">
+                  <div class="cart_info">
+                    <div class="cart_info_top">
+                      <p class="old_price">24 990 ₽</p>
+                      <p class="price">14 990 ₽</p>
+                    </div>
+                    <p class="cart_title">Куртка зимняя с капюшоном</p>
+                  </div>
+                  <div class="counter flex a_center">
+                    <button class="count_btn minus">−</button>
+                    <span class="count">1</span>
+                    <button class="count_btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cart_item flex">
+                <img src="assets/images/categories1.png" class="cart_img" />
+                <div class="cart_content">
+                  <div class="cart_info">
+                    <div class="cart_info_top">
+                      <p class="old_price">24 990 ₽</p>
+                      <p class="price">14 990 ₽</p>
+                    </div>
+                    <p class="cart_title">Куртка зимняя с капюшоном</p>
+                  </div>
+                  <div class="counter flex a_center">
+                    <button class="count_btn minus">−</button>
+                    <span class="count">1</span>
+                    <button class="count_btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- SUMMARY -->
+            <div class="summary">
+              <h3>Сумма заказа</h3>
+
+              <div class="summary_row flex between">
+                <span>3 товара</span>
+                <span id="sum_price">74 970 ₽</span>
+              </div>
+
+              <div class="summary_row flex between discount">
+                <span class="discounts">Скидка</span>
+                <span id="discount">30 000 ₽</span>
+              </div>
+
+              <div class="summary_total flex between">
+                <span>Итого</span>
+                <span id="total">44 970 ₽</span>
+              </div>
+
+              <p class="delivery_text">
+                Без учета возможной стоимости доставки
+              </p>
+
+              <button class="order_btn button  flex column">
+                <span>К оформлению</span>
+                <p>3 товара / 44 997 ₽ <span>74 970</span></p>
+              </button>
+
+              <div class="promo flex column">
+                <div class="flex promo_top">
+                  <span>Промокоды и сертификаты</span>
+                  <img src="assets/images/icon_down.svg" alt="">
+                </div>
+                <div class="code">PROMOCODE</div>
+                <div class="copy">copy</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_top flex between a_end">
+          <a href="#" class="footer_logo">
+            <img src="assets/images/footer_logo.svg" alt="">
+          </a>
+          <div class="footer_menu flex column">
+            <ul class="flex a_center">
+              <li><a href="#">Женщинам</a></li>
+              <li><a href="#">Мужчинам</a></li>
+              <li><a href="#">Детям</a></li>
+            </ul>
+            <ul class="flex a_center">
+              <li><a href="#">Куртки</a></li>
+              <li><a href="#">Штаны</a></li>
+              <li><a href="#">Комбинезоны</a></li>
+              <li><a href="#">Термобельё</a></li>
+              <li><a href="#">Аксессуары</a></li>
+            </ul>
+          </div>
+          <div class="footer_menu">
+            <ul class="flex a_center">
+              <li><a href="#">Женщинам</a></li>
+              <li><a href="#">Мужчинам</a></li>
+              <li><a href="#">Детям</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_bottom">© Icetec 2025 / Все права защищены</div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

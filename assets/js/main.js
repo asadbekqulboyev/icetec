@@ -89,3 +89,54 @@ const main = new Swiper(".product_main", {
     swiper: thumbs,
   },
 });
+const PRICE = 14990;
+const DISCOUNT = 30000;
+
+const counts = document.querySelectorAll(".count");
+const plusBtns = document.querySelectorAll(".plus");
+const minusBtns = document.querySelectorAll(".minus");
+
+const sumPrice = document.getElementById("sum_price");
+const total = document.getElementById("total");
+
+function updateTotal() {
+  let items = 0;
+  counts.forEach((c) => (items += Number(c.textContent)));
+
+  let sum = items * PRICE;
+  let final = sum - DISCOUNT;
+
+  sumPrice.textContent = sum.toLocaleString() + " ₽";
+  total.textContent = final.toLocaleString() + " ₽";
+}
+
+plusBtns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    counts[i].textContent++;
+    updateTotal();
+  });
+});
+
+minusBtns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    if (counts[i].textContent > 1) {
+      counts[i].textContent--;
+      updateTotal();
+    }
+  });
+});
+
+updateTotal();
+const promo_top = document.querySelector(".promo_top");
+promo_top.addEventListener("click", function (e) {
+  e.preventDefault();
+  this.classList.toggle("active");
+  document.querySelector(".code").classList.toggle("active");
+});
+document.querySelector(".code").addEventListener("click", function () {
+  navigator.clipboard.writeText(this.textContent);
+  document.querySelector(".copy").classList.toggle("active");
+});
+setInterval(() => {
+  document.querySelector(".copy").classList.remove("active");
+}, 7000);
