@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICETEC</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header">
+      <div class="container flex between a_center">
+        <a href="#" class="header_logo flex a_center">
+          <img src="assets/images/logo.svg" alt="Icetec logo" class="logo_img">
+        </a>
+        <nav class="header_nav flex column">
+          <div class="header_menu flex a_end end">
+            <ul class="nav_list flex a_center ">
+              <li><a href="#">Куртки</a></li>
+              <li><a href="#">Штаны</a></li>
+              <li><a href="#">Комбинезоны</a></li>
+              <li><a href="#">Термобельё</a></li>
+              <li><a href="#">Аксессуары</a></li>
+              <li><a href="#">О бренде</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Женщинам</a></li>
+              <li><a href="#">Мужчинам</a></li>
+              <li><a href="#">Детям</a></li>
+              <div class="exit_menu">
+                <svg fill="#000000" width="20px" height="50px" viewBox="0 0 256 256" id="Flat"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M202.82861,197.17188a3.99991,3.99991,0,1,1-5.65722,5.65624L128,133.65723,58.82861,202.82812a3.99991,3.99991,0,0,1-5.65722-5.65624L122.343,128,53.17139,58.82812a3.99991,3.99991,0,0,1,5.65722-5.65624L128,122.34277l69.17139-69.17089a3.99991,3.99991,0,0,1,5.65722,5.65624L133.657,128Z" />
+                </svg>
+              </div>
+            </ul>
+            <!-- Right actions -->
+            <div class="header_actions flex a_center">
+              <input type="text" class="search_input" placeholder="Поиск">
+              <ul class="flex a_center mobile_actions">
+                <li class="only_mobile"> <a href="#"><img src="assets/images/search.svg" alt=""></a></li>
+                <li><a href="#"><img src="assets/images/heart.svg" alt=""></a></li>
+                <li><a href="#" class="cart_icon"><img src="assets/images/user.svg" alt=""></a></li>
+                <li><a href="#" class="cart_icon"><img src="assets/images/cart.svg" alt=""></a></li>
+              </ul>
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+          </div>
+        </nav>
+
+      </div>
+    </header>
+    <main>
+      <section class="shop order">
+        <div class="container">
+          <div class="shop_top flex ">
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs_items flex a_center">
+                <li><a href="#">Главная </a></li>
+                /
+                <li><a href="#">Корзина</a></li>
+                /
+                <li><a href="#">Оформление заказа</a></li>
+
+              </ul>
+            </div>
+            <h2 class="section_title big">Оформление заказа</h2>
+          </div>
+          <div class="shop_content flex between">
+            <div class="order_form">
+              <h2 class="section_title">Способ доставки</h2>
+              <div class="order_form_item">
+                <div class="order_form_item_top flex a_center">
+                  <span> Курьер | г. Набережные Челны, пр-кт Мира, 34, 94</span>
+                  <img src="assets/images/icon_down.svg" alt="">
+                </div>
+                <input type="text" placeholder="Комментарий курьеру">
+                <p>Подъезд, домофон, этаж. Мы сохраним эти данные для следующих заказов.</p>
+              </div>
+              <div class="delivery">
+                <!-- TOP TABS -->
+                <div class="delivery_type_tabs">
+                  <label class="tab">
+                    <input type="radio" name="delivery_type" checked>
+                    <span>С примеркой</span>
+                  </label>
+
+                  <label class="tab">
+                    <input type="radio" name="delivery_type">
+                    <span>Без примерки</span>
+                  </label>
+                </div>
+
+                <!-- DATE TABS -->
+                <div class="delivery_date_tabs">
+                  <label class="date_tab">
+                    <input type="radio" name="date" checked>
+                    <span>25 дек, чт</span>
+                  </label>
+
+                  <label class="date_tab">
+                    <input type="radio" name="date">
+                    <span>26 дек, пт</span>
+                  </label>
+
+                  <label class="date_tab">
+                    <input type="radio" name="date">
+                    <span>27 дек, сб</span>
+                  </label>
+
+                  <label class="date_tab">
+                    <input type="radio" name="date">
+                    <span>28 дек, вс</span>
+                  </label>
+
+                  <label class="date_tab">
+                    <input type="radio" name="date">
+                    <span>29 дек, пн</span>
+                  </label>
+
+                  <label class="date_tab">
+                    <input type="radio" name="date">
+                    <span>30 дек, вт</span>
+                  </label>
+
+                  <label class="date_tab">
+                    <input type="radio" name="date">
+                    <span>31 дек, ср</span>
+                  </label>
+                </div>
+
+                <!-- TIME TABS -->
+                <div class="delivery_time_tabs">
+                  <label class="time_tab">
+                    <input type="radio" name="time">
+                    <span>В точное время</span>
+                  </label>
+
+                  <label class="time_tab">
+                    <input type="radio" name="time" checked>
+                    <span>
+                      15:00 – 21:00
+                      <small>Бесплатно</small>
+                    </span>
+                  </label>
+                </div>
+
+              </div>
+              <div class="payment">
+                <h2 class="section_title">Способ оплаты</h2>
+                <div class="payment_tabs">
+                  <label class="pay_tab">
+                    <input type="radio" name="pay_time" checked>
+                    <span>При получении</span>
+                  </label>
+
+                  <label class="pay_tab">
+                    <input type="radio" name="pay_time">
+                    <span>Сразу</span>
+                  </label>
+                </div>
+
+                <!-- METHODS -->
+                <div class="payment_methods">
+                  <label class="method big">
+                    <input type="radio" name="method" checked>
+                    <div class="method_inner">
+                      <div class="method_text">Банковской картой</div>
+                      <img src="assets/images/billing1.svg" alt="">
+                    </div>
+                  </label>
+
+                  <label class="method big">
+                    <input type="radio" name="method">
+                    <div class="method_inner">
+                      <div class="flex column">
+                        <div class="method_text">Сплит</div>
+                        <div class="method_desc">
+                          0 рублей сегодня, 25% после примерки,<br>
+                          далее 3 платежа раз в две недели
+                        </div>
+                      </div>
+                      <img src="assets/images/billing2.svg" alt="">
+                    </div>
+                  </label>
+
+                  <label class="method">
+                    <input type="radio" name="method">
+                    <div class="method_inner">
+                      <div class="method_text">Долями</div>
+                      <img src="assets/images/billing3.svg" alt="">
+                    </div>
+                  </label>
+
+                  <label class="method">
+                    <input type="radio" name="method">
+                    <div class="method_inner">
+                      <div class="method_text">СБП</div>
+                      <img src="assets/images/billing4.svg" alt="">
+                    </div>
+                  </label>
+
+                  <label class="method">
+                    <input type="radio" name="method">
+                    <div class="method_inner">
+                      <div class="method_text">Добавить карту</div>
+                      <img src="assets/images/billing5.svg" alt="">
+                    </div>
+                  </label>
+
+                </div>
+
+                <!-- RECEIVER -->
+                <h2 class="section_title">Кто заберет заказ?</h2>
+
+                <div class="receiver_card">
+                  <div>
+                    <div class="receiver_name">Иванов Иван</div>
+                    <div class="receiver_phone">+7 987 654-32-10</div>
+                  </div>
+                  <div class="receiver_arrow"></div>
+                </div>
+                <div class="rules_link">Подробнее <a href="">о правилах примерки</a></div>
+
+              </div>
+            </div>
+
+            <!-- SUMMARY -->
+            <div class="summary">
+              <h3>Сумма заказа</h3>
+              <div class="images flex"><img src="assets/images/categories2.png" alt=""><img
+                  src="assets/images/tops1.png" alt=""><img src="assets/images/categories1.png" alt=""></div>
+              <div class="summary_row flex between">
+                <span>3 товара</span>
+                <span id="sum_price">74 970 ₽</span>
+              </div>
+
+              <div class="summary_row flex between discount">
+                <span class="discounts">Скидка</span>
+                <span id="discount">30 000 ₽</span>
+              </div>
+
+              <div class="summary_total flex between">
+                <span>Итого</span>
+                <span id="total">44 970 ₽</span>
+              </div>
+              <button class="order_btn button  flex column">
+                Оформить заказ
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_top flex between a_end">
+          <a href="#" class="footer_logo">
+            <img src="assets/images/footer_logo.svg" alt="">
+          </a>
+          <div class="footer_menu flex column">
+            <ul class="flex a_center">
+              <li><a href="#">Женщинам</a></li>
+              <li><a href="#">Мужчинам</a></li>
+              <li><a href="#">Детям</a></li>
+            </ul>
+            <ul class="flex a_center">
+              <li><a href="#">Куртки</a></li>
+              <li><a href="#">Штаны</a></li>
+              <li><a href="#">Комбинезоны</a></li>
+              <li><a href="#">Термобельё</a></li>
+              <li><a href="#">Аксессуары</a></li>
+            </ul>
+          </div>
+          <div class="footer_menu">
+            <ul class="flex a_center">
+              <li><a href="#">Женщинам</a></li>
+              <li><a href="#">Мужчинам</a></li>
+              <li><a href="#">Детям</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_bottom">© Icetec 2025 / Все права защищены</div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

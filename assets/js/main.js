@@ -89,6 +89,7 @@ const main = new Swiper(".product_main", {
     swiper: thumbs,
   },
 });
+
 const PRICE = 14990;
 const DISCOUNT = 30000;
 
