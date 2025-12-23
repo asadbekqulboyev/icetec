@@ -2972,63 +2972,48 @@ body {
 .flex {
   display: flex;
 }
-
 .flex.a_center {
   align-items: center;
 }
-
 .flex.a_start {
   align-items: flex-start;
 }
-
 .flex.a_end {
   align-items: flex-end;
 }
-
 .flex.end {
   justify-content: end;
 }
-
 .flex.center {
   justify-content: center;
 }
-
 .flex.between {
   justify-content: space-between;
 }
-
 .flex.around {
   justify-content: space-around;
 }
-
 .flex.column {
   flex-direction: column;
 }
-
 .flex.row {
   flex-direction: row;
 }
-
 .flex.wrap {
   flex-wrap: wrap;
 }
-
 .flex.no_wrap {
   flex-wrap: nowrap;
 }
-
 .flex.gap_4 {
   gap: 4px;
 }
-
 .flex.gap_8 {
   gap: 8px;
 }
-
 .flex.gap_12 {
   gap: 12px;
 }
-
 .flex.gap_16 {
   gap: 16px;
 }
