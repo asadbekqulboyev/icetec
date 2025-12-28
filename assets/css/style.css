@@ -2418,9 +2418,14 @@
 }
 
 .contact_content {
-  gap: 145px;
+  gap: 195px;
   margin-top: 27px;
   margin-bottom: 66px;
+}
+@media (max-width: 1525px) {
+  .contact_content {
+    gap: 95px;
+  }
 }
 @media (max-width: 1400px) {
   .contact_content {
