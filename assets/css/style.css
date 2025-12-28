@@ -32,6 +32,9 @@
     padding-top: 0px;
   }
 }
+.header_menu .last_link {
+  order: 11;
+}
 .header ul {
   gap: 32px;
   list-style: none;
