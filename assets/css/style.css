@@ -24,10 +24,12 @@
 }
 .header_menu {
   gap: 30px;
+  padding-top: 20px;
 }
 @media (max-width: 1460px) {
   .header_menu {
     gap: 16px;
+    padding-top: 0px;
   }
 }
 .header ul {
@@ -57,6 +59,31 @@
   gap: 16px 32px;
   max-width: 59%;
   transition: all 0.2s linear;
+}
+@media (max-width: 1920px) {
+  .header .nav_list {
+    max-width: 59.8%;
+  }
+}
+@media (max-width: 1899px) {
+  .header .nav_list {
+    max-width: 61%;
+  }
+}
+@media (max-width: 1872px) {
+  .header .nav_list {
+    max-width: 63%;
+  }
+}
+@media (max-width: 1823px) {
+  .header .nav_list {
+    max-width: 64%;
+  }
+}
+@media (max-width: 180px) {
+  .header .nav_list {
+    max-width: 66%;
+  }
 }
 @media (max-width: 1460px) {
   .header .nav_list {
@@ -1009,7 +1036,7 @@
 }
 .shop .section_title {
   width: 100%;
-  max-width: 988px;
+  max-width: 966px;
   margin: 0 auto;
 }
 @media (max-width: 1400px) {
@@ -1878,6 +1905,35 @@
     display: none;
   }
 }
+.catalog .catalog_left {
+  width: 100%;
+  max-width: 416px;
+}
+@media (max-width: 992px) {
+  .catalog .catalog_left {
+    max-width: 100%;
+  }
+}
+.catalog .catalog_left .catalog_sidebar {
+  margin-left: auto;
+  max-width: 216px;
+}
+@media (max-width: 992px) {
+  .catalog .catalog_left .catalog_sidebar {
+    max-width: 100%;
+  }
+}
+.catalog .catalog_content {
+  max-width: 72.45%;
+}
+@media (max-width: 992px) {
+  .catalog .catalog_content {
+    max-width: 100%;
+  }
+}
+.catalog .catalog_content .section_title.none {
+  margin-left: -6px;
+}
 .catalog .section_title:not(.none) {
   display: none;
 }
@@ -2217,9 +2273,13 @@
   text-decoration: none;
 }
 .news_page_content {
-  max-width: 971px;
+  width: 100%;
+  max-width: 1241px;
   position: relative;
   margin: 0 auto;
+}
+.news_page_content .section_title {
+  margin-left: -4px;
 }
 .news_page_items {
   margin-top: 39px;
@@ -2303,7 +2363,7 @@
 }
 .news_page.only .news_page_item img {
   width: 100%;
-  max-width: 918px;
+  max-width: 885px;
 }
 .news_page.only .news_page_item_info {
   display: flex;
@@ -2825,6 +2885,11 @@
   gap: 20px;
   width: calc(42% - 10px);
 }
+@media (max-width: 1641px) {
+  .product_gallery {
+    width: calc(49% - 10px);
+  }
+}
 @media (max-width: 992px) {
   .product_gallery {
     width: 100%;
@@ -2852,6 +2917,7 @@
   width: 100%;
   cursor: pointer;
   object-fit: cover;
+  height: 100%;
 }
 
 .product_main {
@@ -2871,6 +2937,7 @@
 .product_main img {
   width: 100%;
   object-fit: cover;
+  height: 100%;
 }
 
 .color {

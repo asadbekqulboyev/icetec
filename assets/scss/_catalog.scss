@@ -22,6 +22,29 @@
       }
     }
   }
+  .catalog_left {
+    width: 100%;
+    max-width: 416px;
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
+    .catalog_sidebar {
+      margin-left: auto;
+      max-width: 216px;
+      @media (max-width: 992px) {
+        max-width: 100%;
+      }
+    }
+  }
+  .catalog_content {
+    max-width: 72.45%;
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
+    .section_title.none {
+      margin-left: -6px;
+    }
+  }
   .section_title:not(.none) {
     display: none;
     @media (max-width: 992px) {

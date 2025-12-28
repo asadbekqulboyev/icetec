@@ -339,6 +339,9 @@
 .product_gallery {
   gap: 20px;
   width: calc(42% - 10px);
+  @media (max-width: 1641px) {
+    width: calc(49% - 10px);
+  }
   @media (max-width: 992px) {
     width: 100%;
   }
@@ -360,6 +363,7 @@
     width: 100%;
     cursor: pointer;
     object-fit: cover;
+    height: 100%;
   }
 }
 
@@ -375,6 +379,7 @@
   img {
     width: 100%;
     object-fit: cover;
+    height: 100%;
   }
 }
 

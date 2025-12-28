@@ -45,9 +45,13 @@
     }
   }
   &_content {
-    max-width: 971px;
+    width: 100%;
+    max-width: 1241px;
     position: relative;
     margin: 0 auto;
+    .section_title {
+      margin-left: -4px;
+    }
   }
   &_items {
     margin-top: 39px;
@@ -119,7 +123,7 @@
       }
       img {
         width: 100%;
-        max-width: 918px;
+        max-width: 885px;
       }
       &_info {
         display: flex;
