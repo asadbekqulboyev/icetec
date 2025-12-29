@@ -18,10 +18,9 @@
   }
   &_menu {
     gap: 30px;
-    padding-top: 20px;
+    padding: 20px 0 0;
     @media (max-width: 1460px) {
       gap: 16px;
-      padding-top: 0px;
     }
     .last_link {
       order: 11;
@@ -30,14 +29,22 @@
   ul {
     gap: 32px;
     list-style: none;
+
     a {
       color: #000;
       text-decoration: none;
       transition: all 0.2s linear;
-      @media (max-width: 1460px) {
-        font-size: 14px;
+      font-size: 28.5px;
+      @media (max-width: 1754px) {
+        font-size: 22px;
       }
-      @media (max-width: 1270px) {
+      @media (max-width: 1544px) {
+        font-size: 18px;
+      }
+      // @media (max-width: 1460px) {
+      //   font-size: 17px;
+      // }
+      @media (max-width: 1320px) {
         font-size: 16px;
       }
 
@@ -49,22 +56,9 @@
   .nav_list {
     flex-wrap: wrap-reverse;
     gap: 16px 32px;
-    max-width: 59%;
     transition: all 0.2s linear;
-    @media (max-width: 1920px) {
-      max-width: 59.8%;
-    }
-    @media (max-width: 1899px) {
-      max-width: 61%;
-    }
-    @media (max-width: 1872px) {
-      max-width: 63%;
-    }
-    @media (max-width: 1823px) {
-      max-width: 64%;
-    }
-    @media (max-width: 180px) {
-      max-width: 66%;
+    @media (max-width: 1544px) {
+      gap: 24px;
     }
     @media (max-width: 1460px) {
       gap: 16px 24px;
@@ -98,7 +92,7 @@
         align-items: center;
         width: 40px;
         position: absolute;
-        top: 30px;
+        top: 16px;
         right: 32px;
         cursor: pointer;
       }
@@ -122,7 +116,6 @@
   &_actions {
     display: flex;
     gap: 57px;
-    margin-bottom: -11px;
     @media (max-width: 1740px) {
       gap: 30px;
     }
@@ -155,6 +148,7 @@
     width: 37px;
     gap: 9px;
     flex: 0 0 auto;
+    margin-top: -6px;
     @media (max-width: 1270px) {
       display: flex;
       right: -100%;
