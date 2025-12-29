@@ -1,4 +1,6 @@
 .hero {
+  position: relative;
+
   .my_swiper {
     img {
       width: 100%;
@@ -103,9 +105,8 @@
       }
     }
   }
-  .container {
-    position: relative;
-  }
+  // .container {
+  // }
   .custom_pagination {
     gap: 9px;
     position: absolute;

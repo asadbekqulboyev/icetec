@@ -255,6 +255,9 @@
   }
 }
 
+.hero {
+  position: relative;
+}
 .hero .my_swiper img {
   width: 100%;
 }
@@ -382,9 +385,6 @@
   .hero .my_swiper .mobile {
     display: block;
   }
-}
-.hero .container {
-  position: relative;
 }
 .hero .custom_pagination {
   gap: 9px;
