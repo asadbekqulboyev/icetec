@@ -4,15 +4,24 @@
   margin-top: 96px;
   position: relative;
   z-index: 1;
-  @media (max-width: 1200px) {
-    padding-top: 66px;
-  }
+  // @media (max-width: 1184px) {
+  //   padding-top: 66px;
+  // }
   @media (max-width: 768px) {
     margin-top: 58px;
     padding: 36px 0;
   }
   &_logo {
     img {
+      @media (max-width: 1400px) {
+        max-width: 220px;
+      }
+      @media (max-width: 1255px) {
+        max-width: 200px;
+      }
+      @media (max-width: 1184px) {
+        max-width: 180px;
+      }
       @media (max-width: 768px) {
         max-width: 170px;
       }
@@ -21,6 +30,9 @@
   a {
     color: #fff;
     text-decoration: none;
+    @media (max-width: 1255px) {
+      font-size: 15px;
+    }
   }
   &_top {
     max-width: 1529px;
@@ -40,6 +52,9 @@
       @media (max-width: 1300px) {
         flex-wrap: wrap;
       }
+      @media (max-width: 1184px) {
+        gap: 24px;
+      }
       @media (max-width: 768px) {
         gap: 20px;
       }
@@ -48,8 +63,11 @@
   &_menu {
     gap: 16px 0;
     @media (max-width: 1300px) {
-      gap: 24px;
+      gap: 14px;
       flex-wrap: wrap;
+    }
+    @media (max-width: 1255px) {
+      gap: 10px;
     }
     li {
       list-style: none;

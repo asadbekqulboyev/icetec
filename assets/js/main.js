@@ -21,6 +21,55 @@ const swiper = new Swiper(".my_swiper", {
     },
   },
 });
+document.addEventListener("DOMContentLoaded", function () {
+  // const progress = document.querySelector(".tops_progress");
+  // const thumb = document.querySelector(".tops_progress_thumb");
+
+  const swiper = new Swiper(".tops_swiper", {
+    loop: true,
+    spaceBetween: 14,
+
+    navigation: {
+      nextEl: ".tops_next",
+      prevEl: ".tops_prev",
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 14,
+      },
+      576: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 20,
+      },
+    },
+  });
+
+  // function updateThumb(sw) {
+  //   const slidesPerGroup = sw.params.slidesPerGroup;
+
+  //   const totalRealSlides = sw.slides.length - sw.loopedSlides * 2;
+
+  //   const totalPages = Math.ceil(totalRealSlides / slidesPerGroup);
+
+  //   const currentPage = Math.floor(sw.realIndex / slidesPerGroup) % totalPages;
+
+  //   const trackWidth = progress.offsetWidth;
+  //   const thumbWidth = trackWidth / totalPages;
+
+  //   thumb.style.width = `${thumbWidth}px`;
+  //   thumb.style.transform = `translateX(${thumbWidth * currentPage}px)`;
+  // }
+});
+
 const hamburger = document.querySelector(".hamburger");
 hamburger.addEventListener("click", function () {
   this.classList.add("active");
