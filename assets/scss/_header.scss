@@ -1,8 +1,16 @@
 .header {
   padding: 32px 0;
   background: #fff;
-  @media (max-width: 1270px) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1111;
+  @media (max-width: 1400px) {
     padding: 24px 0;
+  }
+  @media (max-width: 1270px) {
+    padding: 22px 0;
   }
   @media (max-width: 768px) {
     padding: 22px 0;

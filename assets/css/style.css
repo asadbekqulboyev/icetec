@@ -2,10 +2,20 @@
 .header {
   padding: 32px 0;
   background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1111;
+}
+@media (max-width: 1400px) {
+  .header {
+    padding: 24px 0;
+  }
 }
 @media (max-width: 1270px) {
   .header {
-    padding: 24px 0;
+    padding: 22px 0;
   }
 }
 @media (max-width: 768px) {
@@ -556,7 +566,6 @@
 .tops {
   padding-top: 96px;
   /* Pastki controls */
-  /* Progressbar */
 }
 @media (max-width: 1200px) {
   .tops {
@@ -675,6 +684,11 @@
   inset: 0;
   margin: auto;
 }
+@media (max-width: 556px) {
+  .tops .tops_nav {
+    display: none;
+  }
+}
 .tops .tops_nav button {
   width: 36px;
   height: 36px;
@@ -692,18 +706,19 @@
     font-size: 18px;
   }
 }
-.tops .tops_progress {
-  flex: 1;
+.tops .tops_scrollbar {
   height: 4px;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  overflow: hidden;
-  top: auto;
-  bottom: 0;
+  width: 100%;
+  background: rgba(227, 226, 232, 0.4509803922);
+  margin-top: 24px;
   position: relative;
+  margin-left: -10px;
 }
-.tops .tops_progress .swiper-pagination-progressbar-fill {
+.tops .tops_scrollbar .swiper-scrollbar-drag {
   background: #f60;
+}
+.tops .tops_swiper {
+  overflow: visible;
 }
 .tops .tops_progress_thumb {
   position: absolute;
@@ -2016,6 +2031,130 @@
   }
 }
 
+.comments {
+  padding-top: 96px;
+}
+.comments_content {
+  margin-top: 29px;
+}
+.comments_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(227, 226, 232, 0.4509803922);
+  border-radius: 16px;
+  padding: 24px;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .comments_item {
+    padding: 16px;
+  }
+}
+.comments_item_top {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.comments_item_top .stars {
+  gap: 8px;
+}
+.comments_item .tg {
+  text-decoration: none;
+  color: #000;
+}
+@media (max-width: 768px) {
+  .comments_item .tg {
+    font-size: 12px;
+  }
+}
+.comments_item .verify {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 556px) {
+  .comments_item .verify {
+    font-size: 14px;
+    gap: 12px;
+  }
+}
+.comments_item .verify_name {
+  font-weight: bold;
+}
+.comments_item .verify_info {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+@media (max-width: 556px) {
+  .comments_item .verify_info {
+    gap: 6px;
+  }
+}
+.comments_item .profile_links {
+  display: flex;
+  padding: 8px 12px 8px 8px;
+  background: #fff;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 16px;
+  color: #000;
+}
+.comments_item .profile_links_left {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+.comments_item .profile_links svg {
+  transform: rotate(-180deg);
+}
+.comments .comments_content_block {
+  overflow: visible;
+}
+.comments .comments_content_block .swiper-wrapper {
+  align-items: stretch;
+}
+.comments .tops_nav {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+@media (max-width: 556px) {
+  .comments .tops_nav {
+    display: none;
+  }
+}
+.comments .tops_nav button {
+  background: rgba(255, 255, 255, 0.9450980392);
+  color: #f60;
+  border: 0;
+  width: 36px;
+  height: 36px;
+  outline: none;
+  font-size: 24px;
+  z-index: 22;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .comments .tops_nav button {
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+  }
+}
+.comments .comments_scrollbar {
+  height: 4px;
+  width: 100%;
+  background: rgba(227, 226, 232, 0.4509803922);
+  margin-top: 24px;
+}
+.comments .comments_scrollbar .swiper-scrollbar-drag {
+  background: #f60;
+}
+
 .catalog {
   padding-top: 63px;
 }
@@ -2556,6 +2695,7 @@
 }
 .news_page .contacts {
   width: 100%;
+  max-width: 100%;
 }
 
 .contact_content {
@@ -3168,6 +3308,30 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+main {
+  padding-top: 120px;
+}
+@media (max-width: 1460px) {
+  main {
+    padding-top: 113px;
+  }
+}
+@media (max-width: 1400px) {
+  main {
+    padding-top: 96px;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    padding-top: 91px;
+  }
+}
+@media (max-width: 480px) {
+  main {
+    padding-top: 73px;
+  }
 }
 
 .wrapper {

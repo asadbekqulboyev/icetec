@@ -27,28 +27,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const swiper = new Swiper(".tops_swiper", {
     loop: true,
-    spaceBetween: 14,
+    speed: 300,
+    spaceBetween: 2,
+    freeMode: {
+      enabled: true,
+      momentum: true,
+      momentumRatio: 0.8,
+      momentumVelocityRatio: 0.8,
+    },
+
+    mousewheel: {
+      forceToAxis: true,
+      sensitivity: 1,
+      releaseOnEdges: true,
+    },
 
     navigation: {
       nextEl: ".tops_next",
       prevEl: ".tops_prev",
     },
-
+    scrollbar: {
+      el: ".tops_scrollbar",
+      draggable: true,
+      hide: false,
+    },
     breakpoints: {
       0: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 14,
+        slidesPerView: 2.1,
       },
       576: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 20,
+        slidesPerView: 2.3,
       },
       992: {
-        slidesPerView: 4,
-        slidesPerGroup: 4,
-        spaceBetween: 20,
+        slidesPerView: 4.1, // 5-rasm chiqib turadi
+        spaceBetween: 5,
       },
     },
   });
@@ -68,6 +80,77 @@ document.addEventListener("DOMContentLoaded", function () {
   //   thumb.style.width = `${thumbWidth}px`;
   //   thumb.style.transform = `translateX(${thumbWidth * currentPage}px)`;
   // }
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const swiper = new Swiper(".comments_content_block", {
+    loop: true,
+    speed: 500,
+    spaceBetween: 14,
+
+    slidesPerView: "auto",
+    freeMode: {
+      enabled: true,
+      momentum: true,
+      momentumRatio: 1,
+      momentumBounce: false,
+    },
+
+    mousewheel: {
+      forceToAxis: true,
+      sensitivity: 1,
+      releaseOnEdges: true,
+    },
+
+    navigation: {
+      nextEl: ".comments_next",
+      prevEl: ".comments_prev",
+    },
+
+    scrollbar: {
+      el: ".comments_scrollbar",
+      draggable: true,
+      hide: false,
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1.1,
+      },
+      768: {
+        slidesPerView: 2.2,
+      },
+      1024: {
+        slidesPerView: 3.1,
+      },
+      1280: {
+        slidesPerView: 3.4,
+      },
+      1440: {
+        slidesPerView: 4.2,
+      },
+    },
+
+    on: {
+      init: equalizeCommentsHeight,
+      resize: equalizeCommentsHeight,
+      setTranslate: equalizeCommentsHeight,
+    },
+  });
+
+  function equalizeCommentsHeight() {
+    const items = document.querySelectorAll(".comments_item");
+    let maxHeight = 0;
+
+    items.forEach((item) => (item.style.height = "auto"));
+
+    items.forEach((item) => {
+      maxHeight = Math.max(maxHeight, item.offsetHeight);
+    });
+
+    items.forEach((item) => {
+      item.style.height = `${maxHeight}px`;
+    });
+  }
 });
 
 const hamburger = document.querySelector(".hamburger");

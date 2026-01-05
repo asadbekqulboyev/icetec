@@ -17,14 +17,6 @@
     }
   }
   &_item {
-    // width: calc(25% - 10px);
-    // @media (max-width: 992px) {
-    //   width: calc(50% - 10px);
-    // }
-    // @media (max-width: 768px) {
-    //   width: calc(50% - 7px);
-    // }
-
     img {
       height: 100%;
       width: 100%;
@@ -93,6 +85,9 @@
     position: absolute;
     inset: 0;
     margin: auto;
+    @media (max-width:556px) {
+      display: none;
+    }
   }
   .tops_nav button {
     width: 36px;
@@ -110,21 +105,22 @@
     }
   }
 
-  /* Progressbar */
-  .tops_progress {
-    flex: 1;
+  .tops_scrollbar {
     height: 4px;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    overflow: hidden;
-    top: auto;
-    bottom: 0;
+    width: 100%;
+    background: rgba(227, 226, 232, 0.4509803922);
+    margin-top: 24px;
     position: relative;
+    margin-left: -10px;
+    .swiper-scrollbar-drag {
+      background: #f60;
+    }
   }
 
-  .tops_progress .swiper-pagination-progressbar-fill {
-    background: #f60;
+  .tops_swiper {
+    overflow: visible;
   }
+
   .tops_progress_thumb {
     position: absolute;
     top: 0;

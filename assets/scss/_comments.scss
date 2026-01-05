@@ -1,0 +1,112 @@
+.comments {
+  padding-top: 96px;
+  &_content {
+    margin-top: 29px;
+  }
+  &_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #e3e2e873;
+    border-radius: 16px;
+    padding: 24px;
+    gap: 20px;
+    @media (max-width: 768px) {
+      padding: 16px;
+    }
+    &_top {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      .stars {
+        gap: 8px;
+      }
+    }
+    .tg {
+      text-decoration: none;
+      color: #000;
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
+    }
+    .verify {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      @media (max-width: 556px) {
+        font-size: 14px;
+        gap: 12px;
+      }
+      &_name {
+        font-weight: bold;
+      }
+      &_info {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        @media (max-width: 556px) {
+          gap: 6px;
+        }
+      }
+    }
+    .profile_links {
+      display: flex;
+      padding: 8px 12px 8px 8px;
+      background: #fff;
+      border-radius: 10px;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      margin-top: 16px;
+      color: #000;
+      &_left {
+        gap: 16px;
+        display: flex;
+        align-items: center;
+      }
+      svg {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+  .comments_content_block{
+    overflow: visible;
+  }
+  .comments_content_block .swiper-wrapper {
+    align-items: stretch;
+  }
+  .tops_nav {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    @media (max-width:556px) {
+        display: none;
+      }
+    button {
+      background: #fffffff1;
+      color: #f60;
+      border: 0;
+      width: 36px;
+      height: 36px;
+      outline: none;
+      font-size: 24px;
+      z-index: 22;
+      cursor: pointer;
+      @media (max-width: 768px) {
+        width: 24px;
+        height: 24px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .comments_scrollbar {
+    height: 4px;
+    width: 100%;
+    background: rgba(227, 226, 232, 0.4509803922);
+    margin-top: 24px;
+    .swiper-scrollbar-drag {
+      background: #f60;
+    }
+  }
+}
