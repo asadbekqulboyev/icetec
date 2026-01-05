@@ -2695,11 +2695,16 @@
 }
 .news_page .contacts {
   width: 100%;
-  max-width: 100%;
+  max-width: 839px;
+}
+@media (max-width: 1900px) {
+  .news_page .contacts {
+    max-width: 100%;
+  }
 }
 
 .contact_content {
-  gap: 195px;
+  gap: 192px;
   margin-top: 27px;
   margin-bottom: 66px;
 }

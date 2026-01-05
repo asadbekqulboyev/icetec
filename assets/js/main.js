@@ -2,6 +2,7 @@ const pagination = document.querySelector(".custom_pagination");
 
 const swiper = new Swiper(".my_swiper", {
   slidesPerView: 1,
+  
   on: {
     init: function () {
       this.slides.forEach((_, index) => {
