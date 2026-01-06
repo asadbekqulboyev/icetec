@@ -52,9 +52,27 @@
   }
   &_content {
     width: 100%;
-    max-width: 1241px;
+    max-width: 1346.5px;
     position: relative;
-    margin: 0 auto;
+    margin: 0 0 0 auto;
+    @media (max-width: 1754px) {
+      max-width: 1170.5px !important;
+    }
+    @media (max-width: 1740px) {
+      max-width: 1133.5px !important;
+    }
+    @media (max-width: 1460px) {
+      max-width: 979.5px !important;
+    }
+    @media (max-width: 1400px) {
+      max-width: 908.38px !important;
+    }
+    @media (max-width: 1320px) {
+      max-width: 854.21px !important;
+    }
+    @media (max-width: 1270px) {
+      max-width: 822.21px !important;
+    }
     @media (max-width: 1302px) {
       max-width: 852px;
     }

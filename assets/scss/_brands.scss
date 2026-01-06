@@ -107,4 +107,52 @@
       }
     }
   }
+  .news_page_content {
+    max-width: 1345px !important;
+    margin: 0;
+
+    @media (max-width: 1754px) {
+      max-width: 1170.5px !important;
+    }
+    @media (max-width: 1740px) {
+      max-width: 1133.5px !important;
+    }
+    @media (max-width: 1460px) {
+      max-width: 979.5px !important;
+    }
+    @media (max-width: 1400px) {
+      max-width: 908.38px !important;
+    }
+    @media (max-width: 1320px) {
+      max-width: 854.21px !important;
+    }
+    @media (max-width: 1270px) {
+      max-width: 822.21px !important;
+    }
+  }
+}
+.map_card {
+  max-width: 1345px !important;
+  margin: 0 0 0 auto !important;
+  .section_title {
+    margin-bottom: 24px;
+  }
+  @media (max-width: 1754px) {
+    max-width: 1170.5px !important;
+  }
+  @media (max-width: 1740px) {
+    max-width: 1133.5px !important;
+  }
+  @media (max-width: 1460px) {
+    max-width: 979.5px !important;
+  }
+  @media (max-width: 1400px) {
+    max-width: 908.38px !important;
+  }
+  @media (max-width: 1320px) {
+    max-width: 854.21px !important;
+  }
+  @media (max-width: 1270px) {
+    max-width: 822.21px !important;
+  }
 }

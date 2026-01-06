@@ -1,6 +1,11 @@
 .sidebar {
   width: 100%;
   max-width: 390px;
+  &.cont {
+    @media (max-width: 1400px) {
+      max-width: 320px;
+    }
+  }
   &_links {
     width: fit-content;
     margin-left: auto;

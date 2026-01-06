@@ -25,6 +25,9 @@
   .catalog_left {
     width: 100%;
     max-width: 416px;
+    @media (max-width: 1850px) {
+      max-width: 360px;
+    }
     @media (max-width: 1400px) {
       max-width: 260px;
     }
@@ -34,18 +37,30 @@
     .catalog_sidebar {
       margin-left: auto;
       max-width: 216px;
+      @media (max-width: 1850px) {
+        max-width: 260px;
+      }
       @media (max-width: 1400px) {
         max-width: 100%;
       }
     }
   }
   .catalog_content {
-    max-width: 72.45%;
+    max-width: 1345px;
+    @media (max-width: 1754px) {
+      max-width: 1170.5px;
+    }
+    @media (max-width: 1740px) {
+      max-width: 1133.5px;
+    }
     @media (max-width: 1400px) {
-      max-width: 75%;
+      max-width: 908.5px;
     }
     @media (max-width: 1320px) {
-      max-width: 74%;
+      max-width: 854.21px;
+    }
+    @media (max-width: 1270px) {
+      max-width: 822.1px;
     }
     @media (max-width: 992px) {
       max-width: 100%;
