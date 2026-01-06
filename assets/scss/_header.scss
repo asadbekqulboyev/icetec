@@ -129,6 +129,9 @@
     outline: none;
     border: none;
     width: 211px;
+    @media (max-width: 1400px) {
+      width: 140px;
+    }
   }
   &_actions {
     display: flex;
