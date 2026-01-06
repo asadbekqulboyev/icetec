@@ -1297,13 +1297,33 @@
 }
 .shop .section_title {
   width: 100%;
-  max-width: 966px;
-  margin: 0 auto;
+  max-width: 1345px;
+  margin: 0 0 0 auto;
+}
+@media (max-width: 1754px) {
+  .shop .section_title {
+    max-width: 1170.5px;
+    padding-top: 0;
+  }
+}
+@media (max-width: 1740px) {
+  .shop .section_title {
+    max-width: 1133.5px;
+  }
 }
 @media (max-width: 1400px) {
   .shop .section_title {
-    max-width: 100%;
-    padding-top: 16px;
+    max-width: 908.5px;
+  }
+}
+@media (max-width: 1320px) {
+  .shop .section_title {
+    max-width: 854.21px;
+  }
+}
+@media (max-width: 1270px) {
+  .shop .section_title {
+    max-width: 822.1px;
   }
 }
 .shop .breadcrumbs {

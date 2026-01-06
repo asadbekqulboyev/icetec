@@ -20,12 +20,28 @@
   }
   .section_title {
     width: 100%;
-    max-width: 966px;
-    margin: 0 auto;
-    @media (max-width: 1400px) {
-      max-width: 100%;
-      padding-top: 16px;
+    max-width: 1345px;
+    margin: 0 0 0 auto;
+    @media (max-width: 1754px) {
+      max-width: 1170.5px;
+      padding-top: 0;
     }
+    @media (max-width: 1740px) {
+      max-width: 1133.5px;
+    }
+    @media (max-width: 1400px) {
+      max-width: 908.5px;
+    }
+    @media (max-width: 1320px) {
+      max-width: 854.21px;
+    }
+    @media (max-width: 1270px) {
+      max-width: 822.1px;
+    }
+    // @media (max-width: 1400px) {
+    //   max-width: 100%;
+    //   padding-top: 16px;
+    // }
   }
   .breadcrumbs {
     color: #a9a9ad;
