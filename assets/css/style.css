@@ -1031,6 +1031,11 @@
   text-decoration: none;
   line-height: normal;
 }
+@media (max-width: 1300px) {
+  .sidebar_links a {
+    font-size: 18px;
+  }
+}
 
 .brands .container {
   padding-top: 21px !important;
