@@ -2600,6 +2600,11 @@
   line-height: normal;
   text-decoration: none;
 }
+@media (max-width: 1302px) {
+  .news_page .sidebar.cont {
+    max-width: 252px;
+  }
+}
 .news_page_content {
   width: 100%;
   max-width: 1241px;
@@ -2616,13 +2621,18 @@
     max-width: 821px;
   }
 }
-@media (max-width: 1200px) {
-  .news_page_content {
-    max-width: 821px;
-  }
-}
 .news_page_content .section_title {
   margin-left: -4px;
+}
+@media (max-width: 1302px) {
+  .news_page_content.cont {
+    max-width: 748px;
+  }
+}
+@media (max-width: 1269px) {
+  .news_page_content.cont {
+    max-width: 697px;
+  }
 }
 .news_page_items {
   margin-top: 39px;
@@ -2928,17 +2938,16 @@
     max-width: 49%;
   }
 }
+@media (max-width: 1641px) {
+  .product .product_info {
+    max-width: 51%;
+  }
+}
 @media (max-width: 992px) {
   .product .product_info {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-  }
-}
-@media (max-width: 1430px) {
-  .product .product_info_top {
-    flex-direction: column;
-    gap: 24px;
   }
 }
 @media (max-width: 992px) {
@@ -2957,6 +2966,11 @@
 }
 .product .product_info .section_title {
   font-size: 48px;
+}
+@media (max-width: 1641px) {
+  .product .product_info .section_title {
+    font-size: 38px;
+  }
 }
 @media (max-width: 992px) {
   .product .product_info .section_title {
@@ -2978,6 +2992,12 @@
   min-width: 293px;
   padding: 19px 20px;
   text-align: center;
+}
+@media (max-width: 1440px) {
+  .product .product_info .button {
+    min-width: 253px;
+    font-size: 19px;
+  }
 }
 .product .product_info .btn_cart {
   padding: 19px;
@@ -3265,7 +3285,7 @@
 }
 @media (max-width: 1641px) {
   .product_gallery {
-    width: calc(49% - 10px);
+    width: calc(46% - 10px);
   }
 }
 @media (max-width: 992px) {
@@ -3281,12 +3301,18 @@
   overflow: hidden;
   display: flex;
 }
-@media (max-width: 1430px) {
+@media (max-width: 1641px) {
   .product_thumbs {
-    max-height: 680px;
+    max-height: 685px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1430px) {
+  .product_thumbs {
+    max-height: 610px;
+    max-width: 91px;
+  }
+}
+@media (max-width: 1190px) {
   .product_thumbs {
     display: none;
   }

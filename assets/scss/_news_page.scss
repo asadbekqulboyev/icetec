@@ -44,6 +44,11 @@
       text-decoration: none;
     }
   }
+  .sidebar.cont {
+    @media (max-width: 1302px) {
+      max-width: 252px;
+    }
+  }
   &_content {
     width: 100%;
     max-width: 1241px;
@@ -55,11 +60,16 @@
     @media (max-width: 1269px) {
       max-width: 821px;
     }
-    @media (max-width: 1200px) {
-      max-width: 821px;
-    }
     .section_title {
       margin-left: -4px;
+    }
+    &.cont {
+      @media (max-width: 1302px) {
+        max-width: 748px;
+      }
+      @media (max-width: 1269px) {
+        max-width: 697px;
+      }
     }
   }
   &_items {
