@@ -1326,6 +1326,11 @@
     max-width: 822.1px;
   }
 }
+@media (max-width: 1400px) {
+  .shop .section_title {
+    padding-top: 16px;
+  }
+}
 .shop .breadcrumbs {
   color: #a9a9ad;
 }
@@ -2338,7 +2343,7 @@
     max-width: 260px;
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .catalog .catalog_left .catalog_sidebar {
     max-width: 100%;
   }
@@ -2792,14 +2797,14 @@
     max-width: 697px;
   }
 }
-@media (max-width: 1302px) {
+@media (max-width: 1185px) {
   .news_page_content.prof {
-    max-width: 774px !important;
+    padding-top: 29px;
   }
 }
-@media (max-width: 1270px) {
+@media (max-width: 992px) {
   .news_page_content.prof {
-    max-width: 726px !important;
+    padding-top: 0px;
   }
 }
 .news_page_items {

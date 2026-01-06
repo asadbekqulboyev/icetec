@@ -91,11 +91,11 @@
       }
     }
     &.prof {
-      @media (max-width: 1302px) {
-        max-width: 774px !important;
+      @media (max-width: 1185px) {
+        padding-top: 29px;
       }
-      @media (max-width: 1270px) {
-        max-width: 726px !important;
+      @media (max-width: 992px) {
+        padding-top: 0px;
       }
     }
   }
