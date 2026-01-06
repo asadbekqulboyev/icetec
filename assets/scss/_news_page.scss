@@ -49,6 +49,15 @@
     max-width: 1241px;
     position: relative;
     margin: 0 auto;
+    @media (max-width: 1302px) {
+      max-width: 852px;
+    }
+    @media (max-width: 1269px) {
+      max-width: 821px;
+    }
+    @media (max-width: 1200px) {
+      max-width: 821px;
+    }
     .section_title {
       margin-left: -4px;
     }
@@ -171,8 +180,8 @@
   .contacts {
     width: 100%;
     max-width: 839px;
-    @media (max-width:1900px) {
-      max-width:100%;
+    @media (max-width: 1900px) {
+      max-width: 100%;
     }
   }
 }
