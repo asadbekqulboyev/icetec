@@ -34,6 +34,7 @@
     }
     li {
       list-style: none;
+      flex: 0 0 auto;
     }
     a {
       color: #a9a9ad;
@@ -69,6 +70,14 @@
       }
       @media (max-width: 1269px) {
         max-width: 697px;
+      }
+    }
+    &.prof {
+      @media (max-width: 1302px) {
+        max-width: 774px !important;
+      }
+      @media (max-width: 1270px) {
+        max-width: 726px !important;
       }
     }
   }

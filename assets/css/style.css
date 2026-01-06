@@ -2591,6 +2591,7 @@
 }
 .news_page .breadcrumbs_items li {
   list-style: none;
+  flex: 0 0 auto;
 }
 .news_page .breadcrumbs_items a {
   color: #a9a9ad;
@@ -2632,6 +2633,16 @@
 @media (max-width: 1269px) {
   .news_page_content.cont {
     max-width: 697px;
+  }
+}
+@media (max-width: 1302px) {
+  .news_page_content.prof {
+    max-width: 774px !important;
+  }
+}
+@media (max-width: 1270px) {
+  .news_page_content.prof {
+    max-width: 726px !important;
   }
 }
 .news_page_items {
