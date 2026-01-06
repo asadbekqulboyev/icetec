@@ -2324,7 +2324,7 @@
     max-width: 360px;
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .catalog .catalog_left {
     max-width: 260px;
   }
