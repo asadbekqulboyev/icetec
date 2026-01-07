@@ -1,5 +1,8 @@
 .product {
   padding: 40px 0;
+  @media (max-width: 1270px) {
+    zoom: 90%;
+  }
   @media (max-width: 768px) {
     padding: 0;
   }
@@ -152,7 +155,7 @@
     }
     .product_colors {
       margin-top: 43px;
-      @media (max-width: 1200px) {
+      @media (max-width: 1180px) {
         display: none;
       }
       p {
@@ -370,7 +373,7 @@
     max-height: 610px;
     max-width: 91px;
   }
-  @media (max-width: 1190px) {
+  @media (max-width: 1180px) {
     display: none;
   }
   img {
