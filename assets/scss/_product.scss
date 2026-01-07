@@ -128,6 +128,9 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        @media (max-width: 1200px) {
+          margin-bottom: -6px;
+        }
         @media (max-width: 768px) {
           font-size: 40px;
         }
@@ -155,7 +158,7 @@
     }
     .product_colors {
       margin-top: 43px;
-      @media (max-width: 1180px) {
+      @media (max-width: 1170px) {
         display: none;
       }
       p {
@@ -373,7 +376,7 @@
     max-height: 610px;
     max-width: 91px;
   }
-  @media (max-width: 1180px) {
+  @media (max-width: 1170px) {
     display: none;
   }
   img {
