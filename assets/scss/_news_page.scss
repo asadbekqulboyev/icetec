@@ -170,6 +170,9 @@
       img {
         width: 100%;
         max-width: 885px;
+        @media (max-width: 1300px) {
+          max-width: 625px;
+        }
       }
       &_info {
         display: flex;

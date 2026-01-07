@@ -1,6 +1,9 @@
 .sidebar {
   width: 100%;
   max-width: 390px;
+  @media (max-width: 1200px) {
+    max-width: 300px;
+  }
   &.cont {
     @media (max-width: 1400px) {
       max-width: 320px;

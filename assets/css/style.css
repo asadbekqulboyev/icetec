@@ -1015,6 +1015,11 @@
   width: 100%;
   max-width: 390px;
 }
+@media (max-width: 1200px) {
+  .sidebar {
+    max-width: 300px;
+  }
+}
 @media (max-width: 1400px) {
   .sidebar.cont {
     max-width: 320px;
@@ -2905,6 +2910,11 @@
 .news_page.only .news_page_item img {
   width: 100%;
   max-width: 885px;
+}
+@media (max-width: 1300px) {
+  .news_page.only .news_page_item img {
+    max-width: 625px;
+  }
 }
 .news_page.only .news_page_item_info {
   display: flex;
