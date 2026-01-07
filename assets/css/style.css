@@ -2134,7 +2134,8 @@
 }
 @media (max-width: 1200px) {
   .order .summary {
-    max-width: 420px;
+    max-width: 490px;
+    padding: 30px 20px;
   }
 }
 @media (max-width: 992px) {
@@ -2160,6 +2161,11 @@
   margin-top: 27px;
   padding: 31px;
   background: #f60;
+}
+@media (max-width: 1200px) {
+  .order .summary .order_btn {
+    padding: 20px;
+  }
 }
 @media (max-width: 768px) {
   .order .summary .order_btn {

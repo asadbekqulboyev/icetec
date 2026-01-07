@@ -375,7 +375,8 @@
     width: 100%;
     max-width: 605px;
     @media (max-width: 1200px) {
-      max-width: 420px;
+      max-width: 490px;
+      padding: 30px 20px;
     }
     @media (max-width: 992px) {
       max-width: 100%;
@@ -396,6 +397,9 @@
       margin-top: 27px;
       padding: 31px;
       background: #f60;
+      @media (max-width: 1200px) {
+        padding: 20px;
+      }
       @media (max-width: 768px) {
         padding: 15px;
         margin-top: 16px;
