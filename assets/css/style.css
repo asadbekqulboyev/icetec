@@ -3011,6 +3011,7 @@
 @media (max-width: 1200px) {
   .contact_content {
     flex-wrap: wrap;
+    max-width: calc(100% - 280px);
     gap: 45px 0;
   }
 }
