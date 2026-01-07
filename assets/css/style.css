@@ -3017,7 +3017,7 @@
 .contact_content .contact_content_item .section_title {
   margin-bottom: 27px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1170px) {
   .contact_content .contact_content_item {
     width: calc(50% - 20px);
   }
