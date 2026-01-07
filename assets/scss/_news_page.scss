@@ -161,6 +161,29 @@
     }
   }
   &.only {
+    .sidebar{
+      max-width: 290px;
+      @media (max-width:1190px) {
+        max-width: 270px;
+      }
+    }
+    .news_page_content{
+      @media (max-width:1545px) {
+        max-width: 993.35px !important;
+      }
+      @media (max-width:1460px) {
+        max-width: 979.35px !important;
+      }
+      @media (max-width:1400px) {
+        max-width: 908.35px !important;
+      }
+      @media (max-width:1320px) {
+        max-width: 854.21px !important;
+      }
+      @media (max-width:1270px) {
+        max-width: 822.21px !important;
+      }
+    }
     .news_page_item {
       gap: 33px;
       margin-top: 22px;

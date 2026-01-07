@@ -1017,7 +1017,7 @@
 }
 @media (max-width: 1200px) {
   .sidebar {
-    max-width: 300px;
+    max-width: 254px;
   }
 }
 @media (max-width: 1400px) {
@@ -2496,7 +2496,7 @@
   list-style: none;
 }
 .catalog_links {
-  padding-top: 94px;
+  padding-top: 112px;
   gap: 20px;
   width: 100%;
   display: flex;
@@ -2560,7 +2560,7 @@
   width: calc(33.33% - 10px);
   height: fit-content;
 }
-@media (max-width: 1180px) {
+@media (max-width: 1170px) {
   .catalog .product_item {
     width: calc(50% - 10px);
   }
@@ -2682,7 +2682,7 @@
 }
 @media (max-width: 1180px) {
   .catalog .product_item_img {
-    max-height: 490px;
+    max-height: 400px;
   }
 }
 @media (max-width: 768px) {
@@ -2920,6 +2920,39 @@
     margin-top: 19px;
   }
 }
+.news_page.only .sidebar {
+  max-width: 290px;
+}
+@media (max-width: 1190px) {
+  .news_page.only .sidebar {
+    max-width: 270px;
+  }
+}
+@media (max-width: 1545px) {
+  .news_page.only .news_page_content {
+    max-width: 993.35px !important;
+  }
+}
+@media (max-width: 1460px) {
+  .news_page.only .news_page_content {
+    max-width: 979.35px !important;
+  }
+}
+@media (max-width: 1400px) {
+  .news_page.only .news_page_content {
+    max-width: 908.35px !important;
+  }
+}
+@media (max-width: 1320px) {
+  .news_page.only .news_page_content {
+    max-width: 854.21px !important;
+  }
+}
+@media (max-width: 1270px) {
+  .news_page.only .news_page_content {
+    max-width: 822.21px !important;
+  }
+}
 .news_page.only .news_page_item {
   gap: 33px;
   margin-top: 22px;
@@ -2994,37 +3027,20 @@
 }
 
 .contact_content {
-  gap: 192px;
+  justify-content: space-between;
   margin-bottom: 66px;
-}
-@media (max-width: 1525px) {
-  .contact_content {
-    gap: 95px;
-  }
-}
-@media (max-width: 1400px) {
-  .contact_content {
-    gap: 20px;
-    max-width: 92%;
-    justify-content: space-between;
-  }
-}
-@media (max-width: 1300px) {
-  .contact_content {
-    max-width: 81%;
-  }
 }
 @media (max-width: 1200px) {
   .contact_content {
-    flex-wrap: wrap;
-    max-width: calc(100% - 280px);
     gap: 45px 0;
   }
 }
 @media (max-width: 768px) {
   .contact_content {
     gap: 28px;
+    flex-direction: column;
     margin-bottom: 27px;
+    align-items: flex-start !important;
   }
 }
 .contact_content .contact_content_item .section_title {
@@ -3043,6 +3059,16 @@
 @media (max-width: 768px) {
   .contact_content .contact_content_item:first-child {
     order: 4;
+  }
+}
+@media (max-width: 1300px) {
+  .contact_content .first_item {
+    max-width: 300px;
+  }
+}
+@media (max-width: 1200px) {
+  .contact_content .first_item {
+    max-width: 291px;
   }
 }
 .contact_content_title {
@@ -3085,10 +3111,78 @@
     font-size: 15px;
   }
 }
+@media (max-width: 1300px) {
+  .contact_content p br {
+    display: none;
+  }
+}
+.contact_content .left_contact {
+  width: 100%;
+  max-width: 1345px;
+  gap: 8%;
+}
+@media (max-width: 1754px) {
+  .contact_content .left_contact {
+    max-width: 1170.5px;
+  }
+}
+@media (max-width: 1741px) {
+  .contact_content .left_contact {
+    max-width: 1133.65px;
+  }
+}
+@media (max-width: 1545px) {
+  .contact_content .left_contact {
+    max-width: 993.35px;
+  }
+}
+@media (max-width: 1461px) {
+  .contact_content .left_contact {
+    max-width: 979.35px;
+  }
+}
+@media (max-width: 1400px) {
+  .contact_content .left_contact {
+    max-width: 908.35px;
+  }
+}
+@media (max-width: 1320px) {
+  .contact_content .left_contact {
+    max-width: 854.21px;
+  }
+}
+@media (max-width: 1270px) {
+  .contact_content .left_contact {
+    max-width: 822.21px;
+  }
+}
+@media (max-width: 768px) {
+  .contact_content .left_contact {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.contact_content .left_contact .section_title {
+  margin-left: -6px;
+}
+@media (max-width: 768px) {
+  .contact_content .left_contact .section_title {
+    display: none;
+  }
+}
 
 @media (max-width: 768px) {
   .maps iframe {
     height: 312px;
+  }
+}
+
+.map_card .section_title {
+  display: none;
+}
+@media (max-width: 768px) {
+  .map_card .section_title {
+    display: block;
   }
 }
 

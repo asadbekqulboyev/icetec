@@ -159,7 +159,7 @@
     }
   }
   &_links {
-    padding-top: 94px;
+    padding-top: 112px;
     gap: 20px;
     width: 100%;
     display: flex;
@@ -214,7 +214,7 @@
     width: calc(33.33% - 10px);
     height: fit-content;
 
-    @media (max-width: 1180px) {
+    @media (max-width: 1170px) {
       width: calc(50% - 10px);
     }
     @media (max-width: 556px) {
@@ -317,7 +317,7 @@
         max-height: 380px;
       }
       @media (max-width: 1180px) {
-        max-height: 490px;
+        max-height: 400px;
       }
       @media (max-width: 768px) {
         min-height: 465px;

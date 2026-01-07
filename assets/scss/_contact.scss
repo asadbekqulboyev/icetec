@@ -1,25 +1,16 @@
 .contact_content {
-  gap: 192px;
+  justify-content: space-between;
   margin-bottom: 66px;
-  @media (max-width: 1525px) {
-    gap: 95px;
-  }
-  @media (max-width: 1400px) {
-    gap: 20px;
-    max-width: 92%;
-    justify-content: space-between;
-  }
-  @media (max-width: 1300px) {
-    max-width: 81%;
-  }
   @media (max-width: 1200px) {
-    flex-wrap: wrap;
-    max-width: calc(100% - 280px);
+    // flex-wrap: wrap;
+    // max-width: calc(100% - 280px);
     gap: 45px 0;
   }
   @media (max-width: 768px) {
     gap: 28px;
+    flex-direction: column;
     margin-bottom: 27px;
+    align-items: flex-start !important;
   }
   .contact_content_item {
     .section_title {
@@ -35,6 +26,14 @@
       @media (max-width: 768px) {
         order: 4;
       }
+    }
+  }
+  .first_item {
+    @media (max-width: 1300px) {
+      max-width: 300px;
+    }
+    @media (max-width: 1200px) {
+      max-width: 291px;
     }
   }
 
@@ -69,12 +68,61 @@
     @media (max-width: 1270px) {
       font-size: 15px;
     }
+    br {
+      @media (max-width: 1300px) {
+        display: none;
+      }
+    }
+  }
+  .left_contact {
+    width: 100%;
+    max-width: 1345px;
+    gap: 8%;
+    @media (max-width: 1754px) {
+      max-width: 1170.5px;
+    }
+    @media (max-width: 1741px) {
+      max-width: 1133.65px;
+    }
+    @media (max-width: 1545px) {
+      max-width: 993.35px;
+    }
+    @media (max-width: 1461px) {
+      max-width: 979.35px;
+    }
+    @media (max-width: 1400px) {
+      max-width: 908.35px;
+    }
+    @media (max-width: 1320px) {
+      max-width: 854.21px;
+    }
+    @media (max-width: 1270px) {
+      max-width: 822.21px;
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .section_title {
+      margin-left: -6px;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
   }
 }
 .maps {
   @media (max-width: 768px) {
     iframe {
       height: 312px;
+    }
+  }
+}
+.map_card {
+  .section_title {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
     }
   }
 }
