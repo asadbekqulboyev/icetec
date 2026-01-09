@@ -173,13 +173,13 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesPerView: 1.09,
       },
       768: {
-        slidesPerView: 2.2,
+        slidesPerView: 2,
       },
       1024: {
-        slidesPerView: 2.2,
+        slidesPerView: 2.1,
       },
       1280: {
-        slidesPerView: 3.1,
+        slidesPerView: 3,
       },
     },
 
