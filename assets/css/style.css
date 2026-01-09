@@ -3656,6 +3656,21 @@
   outline: none;
   border: 0;
 }
+@media (max-width: 1279px) {
+  .product_comments .product_comments_slider .tops_nav button {
+    top: -15%;
+  }
+}
+@media (max-width: 1170px) {
+  .product_comments .product_comments_slider .tops_nav button {
+    top: -10%;
+  }
+}
+@media (max-width: 556px) {
+  .product_comments .product_comments_slider .tops_nav button {
+    top: -8%;
+  }
+}
 
 .product_gallery {
   gap: 20px;

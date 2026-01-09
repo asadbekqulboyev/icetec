@@ -393,6 +393,15 @@
           padding-bottom: 5px;
           outline: none;
           border: 0;
+          @media (max-width: 1279px) {
+            top: -15%;
+          }
+          @media (max-width: 1170px) {
+            top: -10%;
+          }
+          @media (max-width: 556px) {
+            top: -8%;
+          }
         }
       }
     }
