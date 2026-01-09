@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const product_comments_slider = new Swiper(".product_comments_slider", {
     loop: true,
     speed: 500,
-    spaceBetween: 6,
+    spaceBetween: 8,
 
     slidesPerView: "auto",
     freeMode: {
@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     breakpoints: {
       0: {
-        slidesPerView: 1.09,
+        slidesPerView: 1.1,
       },
       768: {
         slidesPerView: 2,
