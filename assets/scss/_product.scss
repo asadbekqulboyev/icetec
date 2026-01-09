@@ -42,18 +42,27 @@
   }
   .container {
     gap: 20px;
+    @media (max-width: 1641px) {
+      gap: 12px 0;
+    }
     @media (max-width: 992px) {
       flex-direction: column;
       gap: 12px;
     }
   }
   .product_info {
-    max-width: 874px;
-    @media (max-width: 1700px) {
-      max-width: 49%;
+    width: 100%;
+    max-width: calc(38% - 10px);
+    zoom: 90%;
+    @media (max-width: 1720px) {
+      zoom: 85%;
     }
     @media (max-width: 1641px) {
-      max-width: 51%;
+      max-width: calc(44% - 10px);
+    }
+    @media (max-width: 1170px) {
+      width: 100%;
+      max-width: 60%;
     }
     @media (max-width: 992px) {
       display: flex;
@@ -61,12 +70,10 @@
       max-width: 100%;
     }
     &_top {
-      // @media (max-width: 1430px) {
-      //   flex-direction: column;
-      //   gap: 24px;
-      // }
       @media (max-width: 992px) {
         order: -1;
+        flex-direction: column;
+        gap: 23px;
       }
       .product_rating {
         display: none !important;
@@ -78,7 +85,7 @@
     }
     .section_title {
       font-size: 48px;
-      @media (max-width: 1641px) {
+      @media (max-width: 1400px) {
         font-size: 38px;
       }
       @media (max-width: 992px) {
@@ -307,7 +314,7 @@
       }
       ul {
         li {
-          gap: 70px;
+          gap: 50px;
           @media (max-width: 1200px) {
             gap: 10px;
           }
@@ -351,47 +358,63 @@
       }
     }
   }
+  &_comments {
+    overflow: hidden;
+    padding-top: 35px;
+    .section_title {
+      font-size: 36px;
+    }
+    .product_comments_slider {
+      .comments_item_bottom {
+        gap: 16px;
+      }
+      .comments_item {
+        background: #fff;
+        padding: 0;
+      }
+      .tops_nav {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        width: 100%;
+        button {
+          position: relative;
+          z-index: 2;
+          width: 32px;
+          height: 32px;
+          background: rgba(255, 255, 255, 0.8862745098);
+          color: #f60;
+          line-height: 0;
+          font-size: 29px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 5px;
+          outline: none;
+          border: 0;
+        }
+      }
+    }
+  }
 }
 .product_gallery {
   gap: 20px;
-  width: calc(42% - 10px);
+  width: calc(60% - 10px);
   @media (max-width: 1641px) {
-    width: calc(46% - 10px);
+    max-width: calc(55% - 10px);
   }
-  @media (max-width: 992px) {
-    width: 100%;
-  }
-}
-
-.product_thumbs {
-  max-width: 128px;
-  width: 100%;
-  max-height: 785px;
-  overflow: hidden;
-  display: flex;
-  @media (max-width: 1641px) {
-    max-height: 685px;
-  }
-  @media (max-width: 1430px) {
-    max-height: 610px;
-    max-width: 91px;
+  @media (max-width: 1400px) {
+    zoom: 80%;
   }
   @media (max-width: 1170px) {
-    display: none;
-  }
-  img {
     width: 100%;
-    cursor: pointer;
-    object-fit: cover;
-    height: 100%;
+    max-width: 100%;
   }
 }
-
 .product_main {
-  width: 606px;
-  @media (max-width: 1200px) {
+  @media (max-width: 1170px) {
     width: 100%;
-    max-width: 456px;
+    max-width: 100%;
   }
   @media (max-width: 992px) {
     max-width: 100%;
@@ -400,6 +423,43 @@
     width: 100%;
     object-fit: cover;
     height: 100%;
+  }
+  .swiper_pagination {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 16px;
+    z-index: 2;
+  }
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 3px;
+    background: #f60;
+    border-radius: 0;
+  }
+
+  .swiper_button_next,
+  .swiper_button_prev {
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.8862745098);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #f60;
+    line-height: 0;
+    font-size: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+
+  .swiper_button_prev {
+    right: 0;
   }
 }
 

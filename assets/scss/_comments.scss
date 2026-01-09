@@ -69,7 +69,7 @@
       }
     }
   }
-  .comments_content_block{
+  .comments_content_block {
     overflow: visible;
   }
   .comments_content_block .swiper-wrapper {
@@ -79,9 +79,9 @@
     position: absolute;
     inset: 0;
     margin: auto;
-    @media (max-width:556px) {
-        display: none;
-      }
+    @media (max-width: 556px) {
+      display: none;
+    }
     button {
       background: #fffffff1;
       color: #f60;
@@ -99,14 +99,13 @@
       }
     }
   }
-
-  .comments_scrollbar {
-    height: 4px;
-    width: 100%;
-    background: rgba(227, 226, 232, 0.4509803922);
-    margin-top: 24px;
-    .swiper-scrollbar-drag {
-      background: #f60;
-    }
+}
+.comments_scrollbar {
+  height: 4px;
+  width: 100%;
+  background: rgba(227, 226, 232, 0.4509803922);
+  margin-top: 24px;
+  .swiper-scrollbar-drag {
+    background: #f60;
   }
 }

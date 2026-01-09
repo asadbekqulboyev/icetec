@@ -2,7 +2,7 @@ const pagination = document.querySelector(".custom_pagination");
 
 const swiper = new Swiper(".my_swiper", {
   slidesPerView: 1,
-  
+
   on: {
     init: function () {
       this.slides.forEach((_, index) => {
@@ -22,9 +22,10 @@ const swiper = new Swiper(".my_swiper", {
     },
   },
 });
+
 document.addEventListener("DOMContentLoaded", function () {
-  // const progress = document.querySelector(".tops_progress");
-  // const thumb = document.querySelector(".tops_progress_thumb");
+  const progress = document.querySelector(".tops_progress");
+  const thumb = document.querySelector(".tops_progress_thumb");
 
   const swiper = new Swiper(".tops_swiper", {
     loop: true,
@@ -137,7 +138,57 @@ document.addEventListener("DOMContentLoaded", () => {
       setTranslate: equalizeCommentsHeight,
     },
   });
+  const product_comments_slider = new Swiper(".product_comments_slider", {
+    loop: true,
+    speed: 500,
+    spaceBetween: 6,
 
+    slidesPerView: "auto",
+    freeMode: {
+      enabled: true,
+      momentum: true,
+      momentumRatio: 1,
+      momentumBounce: false,
+    },
+
+    mousewheel: {
+      forceToAxis: true,
+      sensitivity: 1,
+      releaseOnEdges: true,
+    },
+
+    navigation: {
+      nextEl: ".comments_next",
+      prevEl: ".comments_prev",
+    },
+
+    scrollbar: {
+      el: ".comments_scrollbar",
+      draggable: true,
+      hide: false,
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1.09,
+      },
+      768: {
+        slidesPerView: 2.2,
+      },
+      1024: {
+        slidesPerView: 2.2,
+      },
+      1280: {
+        slidesPerView: 3.1,
+      },
+    },
+
+    on: {
+      init: equalizeCommentsHeight,
+      resize: equalizeCommentsHeight,
+      setTranslate: equalizeCommentsHeight,
+    },
+  });
   function equalizeCommentsHeight() {
     const items = document.querySelectorAll(".comments_item");
     let maxHeight = 0;
@@ -175,10 +226,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const option_links = sort_options.querySelectorAll("a");
 
   // TOP bosilganda ochish / yopish
-  sort_top.addEventListener("click", function () {
-    sort_options.classList.toggle("active");
-    sort_top.classList.toggle("active");
-  });
+  if (sort_top) {
+    sort_top.addEventListener("click", function () {
+      sort_options.classList.toggle("active");
+      sort_top.classList.toggle("active");
+    });
+  }
 
   // OPTION bosilganda
   option_links.forEach(function (link) {
@@ -215,11 +268,17 @@ const thumbs = new Swiper(".product_thumbs", {
   spaceBetween: 28,
 });
 
-const main = new Swiper(".product_main", {
+const product_main = new Swiper(".product_main", {
+  slidesPerView: 2,
   spaceBetween: 10,
-  slidesPerView: 1,
-  thumbs: {
-    swiper: thumbs,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper_button_prev",
+    prevEl: ".swiper_button_next",
+  },
+  pagination: {
+    el: ".swiper_pagination",
+    clickable: true,
   },
 });
 
@@ -234,11 +293,15 @@ const sumPrice = document.getElementById("sum_price");
 const total = document.getElementById("total");
 
 function updateTotal() {
+  if (!sumPrice || !total || !counts.length) return;
+
   let items = 0;
-  counts.forEach((c) => (items += Number(c.textContent)));
+  counts.forEach((c) => {
+    items += Number(c.textContent) || 0;
+  });
 
   let sum = items * PRICE;
-  let final = sum - DISCOUNT;
+  let final = Math.max(0, sum - DISCOUNT);
 
   sumPrice.textContent = sum.toLocaleString() + " ₽";
   total.textContent = final.toLocaleString() + " ₽";

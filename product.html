@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ICETEC</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -56,40 +57,319 @@
     </header>
     <main>
       <section class="product">
-
         <div class="container flex between a_start wrap">
-          <div class="breadcrumbs">
-            <ul class="breadcrumbs_items flex a_center">
-              <li><a href="#">Главная </a></li>
-              /
-              <li><a href="#">Мой профиль</a></li>
-              /
-              <li><a href="#"> Мои заказаы бренде</a></li>
-            </ul>
-          </div>
-          <div class="product_gallery flex">
-            <!-- Thumbs -->
-            <div class="swiper product_thumbs">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="assets/images/categories2.png"></div>
-                <div class="swiper-slide"><img src="assets/images/categories2.png"></div>
-                <div class="swiper-slide"><img src="assets/images/categories2.png"></div>
-                <div class="swiper-slide"><img src="assets/images/categories2.png"></div>
-              </div>
-            </div>
-
-            <!-- Main -->
+          <div class="product_gallery">
             <div class="swiper product_main">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="assets/images/categories2.png"></div>
-                <div class="swiper-slide"><img src="assets/images/categories2.png"></div>
-                <div class="swiper-slide"><img src="assets/images/categories2.png"></div>
-                <div class="swiper-slide"><img src="assets/images/categories2.png"></div>
+                <a href="assets/images/categories2.png" data-fancybox="product" class="swiper-slide">
+                  <img src="assets/images/categories2.png" alt="">
+                </a>
 
+                <a href="assets/images/categories2.png" data-fancybox="product" class="swiper-slide">
+                  <img src="assets/images/categories2.png" alt="">
+                </a>
+
+                <a href="assets/images/categories2.png" data-fancybox="product" class="swiper-slide">
+                  <img src="assets/images/categories2.png" alt="">
+                </a>
+
+                <a href="assets/images/categories2.png" data-fancybox="product" class="swiper-slide">
+                  <img src="assets/images/categories2.png" alt="">
+                </a>
+              </div>
+
+              <div class="swiper_button_next">‹</div>
+              <div class="swiper_button_prev">›</div>
+              <div class="swiper_pagination"></div>
+            </div>
+            <div class="product_comments">
+              <h2 class="section_title">Tech</h2>
+              <div class="comments_content">
+                <div class="swiper product_comments_slider">
+                  <div class="swiper-wrapper" id="swiper-wrapper">
+                    <div class="swiper-slide comments_item">
+                      <div class="comments_item_top">
+                        <video class="" autoplay="" loop="" playsinline="" webkit-playsinline="true"
+                          style="pointer-events: none; width:100%;">
+                          <source src="./assets/images/comment_img1.mp4" type="video/mp4">Your browser does not support
+                          the HTML5 video element
+                        </video>
+                        <h3>Breathability</h3>
+                        <p>Managing the humidity that builds up inside from body heat is crucial. Our bonded membrane
+                          system offers top-notch breathability, effectively managing moisture.</p>
+                      </div>
+                      <div class="comments_item_bottom flex ">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 7L5 5" stroke="black" stroke-width="2"></path>
+                          <path d="M5 11L5 9" stroke="black" stroke-width="2"></path>
+                          <path
+                            d="M4 20C4 20.5523 4.44772 21 5 21C5.55228 21 6 20.5523 6 20L4 20ZM6 20L6 14L4 14L4 20L6 20Z"
+                            fill="black"></path>
+                          <path
+                            d="M18 20C18 20.5523 18.4477 21 19 21C19.5523 21 20 20.5523 20 20L18 20ZM20 20L20 14L18 14L18 20L20 20Z"
+                            fill="black"></path>
+                          <path
+                            d="M11 20C11 20.5523 11.4477 21 12 21C12.5523 21 13 20.5523 13 20L11 20ZM13 20L13 14L11 14L11 20L13 20Z"
+                            fill="black"></path>
+                          <path
+                            d="M4.77963 2.23855C4.89841 2.10997 5.10159 2.10997 5.22037 2.23855L7.99893 5.24643C8.17642 5.43858 8.04014 5.75 7.77856 5.75H2.22144C1.95986 5.75 1.82358 5.43858 2.00107 5.24643L4.77963 2.23855Z"
+                            fill="black"></path>
+                          <path d="M12 7L12 5" stroke="black" stroke-width="2"></path>
+                          <path d="M12 11L12 9" stroke="black" stroke-width="2"></path>
+                          <path
+                            d="M11.7796 2.23855C11.8984 2.10997 12.1016 2.10997 12.2204 2.23855L14.9989 5.24643C15.1764 5.43858 15.0401 5.75 14.7786 5.75H9.22144C8.95986 5.75 8.82358 5.43858 9.00107 5.24643L11.7796 2.23855Z"
+                            fill="black"></path>
+                          <path d="M19 7L19 5" stroke="black" stroke-width="2"></path>
+                          <path d="M19 11L19 9" stroke="black" stroke-width="2"></path>
+                          <path
+                            d="M18.7796 2.23855C18.8984 2.10997 19.1016 2.10997 19.2204 2.23855L21.9989 5.24643C22.1764 5.43858 22.0401 5.75 21.7786 5.75H16.2214C15.9599 5.75 15.8236 5.43858 16.0011 5.24643L18.7796 2.23855Z"
+                            fill="black"></path>
+                          <line x1="3" y1="14" x2="21" y2="14" stroke="black" stroke-width="2" stroke-linecap="round">
+                          </line>
+                        </svg>
+                        <div class="size">20.000 g</div>
+                        <div class="br">SHIELD-TEC</div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide comments_item">
+                      <div class="comments_item_top">
+                        <video class="" autoplay="" loop="" playsinline="" webkit-playsinline="true"
+                          style="pointer-events: none; width:100%;">
+                          <source src="./assets/images/comment_img2.mp4" type="video/mp4">Your browser does not support
+                          the HTML5 video element
+                        </video>
+                        <h3>Waterproofing</h3>
+                        <p>Snow and rain are part of a rider's reality. That's why we use a bonded waterproof membrane
+                          that provides a solid barrier against moisture, together with a PFAS-free DWR treatment for
+                          rapid water beading and runoff.</p>
+                      </div>
+                      <div class="comments_item_bottom flex a_center">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M12 3L9.98456 6.52703C9.10027 8.07453 10.2177 10 12 10C13.7823 10 14.8997 8.07453 14.0154 6.52703L12 3Z"
+                            fill="black"></path>
+                          <path
+                            d="M17 13L14.9846 16.527C14.1003 18.0745 15.2177 20 17 20C18.7823 20 19.8997 18.0745 19.0154 16.527L17 13Z"
+                            fill="black"></path>
+                          <path
+                            d="M7 13L4.98456 16.527C4.10027 18.0745 5.21766 20 7 20C8.78234 20 9.89973 18.0745 9.01544 16.527L7 13Z"
+                            fill="black"></path>
+                        </svg>3
+                        <div class="size">20.000 g</div>
+                        <div class="br">SHIELD-TEC</div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide comments_item">
+                      <div class="comments_item_top">
+                        <video class="" autoplay="" loop="" playsinline="" webkit-playsinline="true"
+                          style="pointer-events: none; width:100%;">
+                          <source src="./assets/images/comment_img3.mp4" type="video/mp4">Your browser does not support
+                          the HTML5 video element
+                        </video>
+                        <h3>Taped Seams</h3>
+                        <p>The seams are the weakest point of any garment, so by applying a special adhesive tape that
+                          makes sure water can't get in, you can ride in the worst conditions with confidence.</p>
+                      </div>
+                      <div class="comments_item_bottom flex a_center">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="24" height="24" fill="none"></rect>
+                          <path
+                            d="M4.40845 20.5318H1.75219C1.428 20.5318 1.16507 20.7948 1.16507 21.119C1.16507 21.4416 1.428 21.7046 1.75219 21.7046H4.40845C4.73263 21.7046 4.99557 21.4416 4.99557 21.119C4.99557 20.7948 4.73263 20.5318 4.40845 20.5318Z"
+                            fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.75219 21.5546C1.5106 21.5546 1.31507 21.3586 1.31507 21.119C1.31507 20.8776 1.51085 20.6818 1.75219 20.6818H4.40845C4.64979 20.6818 4.84557 20.8776 4.84557 21.119C4.84557 21.3586 4.65004 21.5546 4.40845 21.5546H1.75219ZM1.01507 21.119C1.01507 21.5247 1.34541 21.8546 1.75219 21.8546H4.40845C4.81523 21.8546 5.14557 21.5247 5.14557 21.119C5.14557 20.7119 4.81548 20.3818 4.40845 20.3818H1.75219C1.34516 20.3818 1.01507 20.7119 1.01507 21.119Z"
+                            fill="black"></path>
+                          <path
+                            d="M15.04 20.5329H12.3837C12.0596 20.5329 11.7966 20.7958 11.7966 21.12C11.7966 21.4427 12.0596 21.7057 12.3837 21.7057H15.04C15.3642 21.7057 15.6271 21.4427 15.6271 21.12C15.6271 20.7958 15.3642 20.5329 15.04 20.5329Z"
+                            fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.3837 21.5557C12.1422 21.5557 11.9466 21.3596 11.9466 21.12C11.9466 20.8787 12.1424 20.6829 12.3837 20.6829H15.04C15.2813 20.6829 15.4771 20.8787 15.4771 21.12C15.4771 21.3596 15.2816 21.5557 15.04 21.5557H12.3837ZM11.6466 21.12C11.6466 21.5258 11.977 21.8557 12.3837 21.8557H15.04C15.4468 21.8557 15.7771 21.5258 15.7771 21.12C15.7771 20.713 15.447 20.3829 15.04 20.3829H12.3837C11.9767 20.3829 11.6466 20.713 11.6466 21.12Z"
+                            fill="black"></path>
+                          <path
+                            d="M9.72621 20.5318H7.06846C6.74427 20.5318 6.48133 20.7948 6.48133 21.119C6.48133 21.4416 6.74427 21.7046 7.06846 21.7046H9.72621C10.0504 21.7046 10.3133 21.4416 10.3133 21.119C10.3133 20.7948 10.0504 20.5318 9.72621 20.5318Z"
+                            fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.06846 21.5546C6.82686 21.5546 6.63133 21.3586 6.63133 21.119C6.63133 20.8776 6.82711 20.6818 7.06846 20.6818H9.72621C9.96755 20.6818 10.1633 20.8776 10.1633 21.119C10.1633 21.3586 9.9678 21.5546 9.72621 21.5546H7.06846ZM6.33133 21.119C6.33133 21.5247 6.66168 21.8546 7.06846 21.8546H9.72621C10.133 21.8546 10.4633 21.5247 10.4633 21.119C10.4633 20.7119 10.1332 20.3818 9.72621 20.3818H7.06846C6.66143 20.3818 6.33133 20.7119 6.33133 21.119Z"
+                            fill="black"></path>
+                          <path
+                            d="M20.3578 20.5318H17.7C17.3758 20.5318 17.1129 20.7948 17.1129 21.119C17.1129 21.4416 17.3758 21.7046 17.7 21.7046H20.3578C20.682 21.7046 20.9449 21.4416 20.9449 21.119C20.9449 20.7948 20.682 20.5318 20.3578 20.5318Z"
+                            fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M17.7 21.5546C17.4584 21.5546 17.2629 21.3586 17.2629 21.119C17.2629 20.8776 17.4587 20.6818 17.7 20.6818H20.3578C20.5991 20.6818 20.7949 20.8776 20.7949 21.119C20.7949 21.3586 20.5994 21.5546 20.3578 21.5546H17.7ZM16.9629 21.119C16.9629 21.5247 17.2932 21.8546 17.7 21.8546H20.3578C20.7645 21.8546 21.0949 21.5247 21.0949 21.119C21.0949 20.7119 20.7648 20.3818 20.3578 20.3818H17.7C17.293 20.3818 16.9629 20.7119 16.9629 21.119Z"
+                            fill="black"></path>
+                          <path
+                            d="M15.3506 16.733C11.9966 16.733 9.26716 14.0036 9.26716 10.6496C9.26716 7.29571 11.9966 4.56625 15.3506 4.56625C18.7045 4.56625 21.4324 7.29571 21.4324 10.6496C21.4324 14.0036 18.7045 16.733 15.3506 16.733ZM15.3506 3.00059C11.1331 3.00059 7.7 6.4322 7.7 10.6496C7.7 13.1565 8.92953 15.3661 10.8 16.7629H1.75256C1.33724 16.7629 0.999609 17.1005 0.999609 17.5159C0.999609 17.9327 1.33724 18.2703 1.75256 18.2703H15.0548C15.1548 18.2748 15.2505 18.3002 15.3506 18.3002C19.568 18.3002 22.9996 14.8671 22.9996 10.6496C22.9996 6.4322 19.568 3.00059 15.3506 3.00059Z"
+                            fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.2096 18.1364C15.1662 18.1302 15.1145 18.1228 15.0615 18.1205L15.0548 18.1202L1.75256 18.1203C1.42028 18.1203 1.14961 17.85 1.14961 17.5159C1.14961 17.1834 1.42009 16.9129 1.75256 16.9129H11.2515L10.8897 16.6427C9.05447 15.2722 7.85 13.1059 7.85 10.6496C7.85 6.51508 11.2159 3.15059 15.3506 3.15059C19.4851 3.15059 22.8496 6.51505 22.8496 10.6496C22.8496 14.7843 19.4851 18.1502 15.3506 18.1502C15.3122 18.1502 15.2726 18.1453 15.2236 18.1384C15.2191 18.1378 15.2144 18.1371 15.2096 18.1364ZM15.1817 18.4355C15.2306 18.4424 15.2889 18.4502 15.3506 18.4502C19.6509 18.4502 23.1496 14.9499 23.1496 10.6496C23.1496 6.34936 19.6508 2.85059 15.3506 2.85059C11.0503 2.85059 7.55 6.34932 7.55 10.6496C7.55 13.0508 8.65588 15.1834 10.3682 16.6129H1.75256C1.2544 16.6129 0.849609 17.0177 0.849609 17.5159C0.849609 18.0153 1.25421 18.4203 1.75256 18.4203H15.0512C15.0878 18.4221 15.1243 18.4273 15.1687 18.4336C15.173 18.4342 15.1773 18.4348 15.1817 18.4355ZM9.11716 10.6496C9.11716 14.0864 11.9138 16.883 15.3506 16.883C18.7874 16.883 21.5824 14.0864 21.5824 10.6496C21.5824 7.21291 18.7874 4.41625 15.3506 4.41625C11.9138 4.41625 9.11716 7.21287 9.11716 10.6496ZM15.3506 16.583C12.0795 16.583 9.41716 13.9207 9.41716 10.6496C9.41716 7.37855 12.0795 4.71625 15.3506 4.71625C18.6216 4.71625 21.2824 7.3785 21.2824 10.6496C21.2824 13.9208 18.6216 16.583 15.3506 16.583Z"
+                            fill="black"></path>
+                          <path
+                            d="M15.3512 11.6545C14.7955 11.6545 14.3443 11.2034 14.3443 10.6491C14.3443 10.0934 14.7955 9.64218 15.3512 9.64218C15.907 9.64218 16.3582 10.0934 16.3582 10.6491C16.3582 11.2034 15.907 11.6545 15.3512 11.6545ZM15.3512 8.07502C13.932 8.07502 12.7771 9.22985 12.7771 10.6491C12.7771 12.0669 13.932 13.2217 15.3512 13.2217C16.7705 13.2217 17.9253 12.0669 17.9253 10.6491C17.9253 9.22985 16.7705 8.07502 15.3512 8.07502Z"
+                            fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.3512 13.1217C13.9872 13.1217 12.8771 12.0116 12.8771 10.6491C12.8771 9.28507 13.9872 8.17502 15.3512 8.17502C16.7153 8.17502 17.8253 9.28507 17.8253 10.6491C17.8253 12.0116 16.7153 13.1217 15.3512 13.1217ZM12.6771 10.6491C12.6771 12.1221 13.8768 13.3217 15.3512 13.3217C16.8257 13.3217 18.0253 12.1221 18.0253 10.6491C18.0253 9.17462 16.8257 7.97502 15.3512 7.97502C13.8767 7.97502 12.6771 9.17462 12.6771 10.6491ZM14.2443 10.6491C14.2443 11.2587 14.7403 11.7545 15.3512 11.7545C15.9621 11.7545 16.4582 11.2587 16.4582 10.6491C16.4582 10.0381 15.9622 9.54218 15.3512 9.54218C14.7402 9.54218 14.2443 10.0381 14.2443 10.6491ZM15.3512 11.5545C14.8506 11.5545 14.4443 11.148 14.4443 10.6491C14.4443 10.1486 14.8507 9.74218 15.3512 9.74218C15.8517 9.74218 16.2582 10.1486 16.2582 10.6491C16.2582 11.148 15.8518 11.5545 15.3512 11.5545Z"
+                            fill="black"></path>
+                        </svg>
+                        <div class="size">20.000 g</div>
+                        <div class="br">SHIELD-TEC</div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide comments_item">
+                      <div class="comments_item_top">
+                        <video class="" autoplay="" loop="" playsinline="" webkit-playsinline="true"
+                          style="pointer-events: none; width:100%;">
+                          <source src="./assets/images/comment_img1.mp4" type="video/mp4">Your browser does not support
+                          the HTML5 video element
+                        </video>
+                        <h3>Climate Control</h3>
+                        <p>Thermal Insulation with state-of-the-art materials, combining perfect comfort with high
+                          thermal insulation properties, for true all-day comfort.</p>
+                      </div>
+                      <div class="comments_item_bottom flex a_center">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 7L5 5" stroke="black" stroke-width="2"></path>
+                          <path d="M5 11L5 9" stroke="black" stroke-width="2"></path>
+                          <path
+                            d="M4 20C4 20.5523 4.44772 21 5 21C5.55228 21 6 20.5523 6 20L4 20ZM6 20L6 14L4 14L4 20L6 20Z"
+                            fill="black"></path>
+                          <path
+                            d="M18 20C18 20.5523 18.4477 21 19 21C19.5523 21 20 20.5523 20 20L18 20ZM20 20L20 14L18 14L18 20L20 20Z"
+                            fill="black"></path>
+                          <path
+                            d="M11 20C11 20.5523 11.4477 21 12 21C12.5523 21 13 20.5523 13 20L11 20ZM13 20L13 14L11 14L11 20L13 20Z"
+                            fill="black"></path>
+                          <path
+                            d="M4.77963 2.23855C4.89841 2.10997 5.10159 2.10997 5.22037 2.23855L7.99893 5.24643C8.17642 5.43858 8.04014 5.75 7.77856 5.75H2.22144C1.95986 5.75 1.82358 5.43858 2.00107 5.24643L4.77963 2.23855Z"
+                            fill="black"></path>
+                          <path d="M12 7L12 5" stroke="black" stroke-width="2"></path>
+                          <path d="M12 11L12 9" stroke="black" stroke-width="2"></path>
+                          <path
+                            d="M11.7796 2.23855C11.8984 2.10997 12.1016 2.10997 12.2204 2.23855L14.9989 5.24643C15.1764 5.43858 15.0401 5.75 14.7786 5.75H9.22144C8.95986 5.75 8.82358 5.43858 9.00107 5.24643L11.7796 2.23855Z"
+                            fill="black"></path>
+                          <path d="M19 7L19 5" stroke="black" stroke-width="2"></path>
+                          <path d="M19 11L19 9" stroke="black" stroke-width="2"></path>
+                          <path
+                            d="M18.7796 2.23855C18.8984 2.10997 19.1016 2.10997 19.2204 2.23855L21.9989 5.24643C22.1764 5.43858 22.0401 5.75 21.7786 5.75H16.2214C15.9599 5.75 15.8236 5.43858 16.0011 5.24643L18.7796 2.23855Z"
+                            fill="black"></path>
+                          <line x1="3" y1="14" x2="21" y2="14" stroke="black" stroke-width="2" stroke-linecap="round">
+                          </line>
+                        </svg>
+                        <div class="size">20.000 g</div>
+                        <div class="br">SHIELD-TEC</div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide comments_item">
+                      <div class="comments_item_top">
+                        <video class="" autoplay="" loop="" playsinline="" webkit-playsinline="true"
+                          style="pointer-events: none; width:100%;">
+                          <source src="./assets/images/comment_img3.mp4" type="video/mp4">Your browser does not support
+                          the HTML5 video element
+                        </video>
+                        <h3>Taped Seams</h3>
+                        <p>The seams are the weakest point of any garment, so by applying a special adhesive tape that
+                          makes sure water can't get in, you can ride in the worst conditions with confidence.</p>
+                      </div>
+                      <div class="comments_item_bottom flex a_center">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="24" height="24" fill="none"></rect>
+                          <path
+                            d="M4.40845 20.5318H1.75219C1.428 20.5318 1.16507 20.7948 1.16507 21.119C1.16507 21.4416 1.428 21.7046 1.75219 21.7046H4.40845C4.73263 21.7046 4.99557 21.4416 4.99557 21.119C4.99557 20.7948 4.73263 20.5318 4.40845 20.5318Z"
+                            fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.75219 21.5546C1.5106 21.5546 1.31507 21.3586 1.31507 21.119C1.31507 20.8776 1.51085 20.6818 1.75219 20.6818H4.40845C4.64979 20.6818 4.84557 20.8776 4.84557 21.119C4.84557 21.3586 4.65004 21.5546 4.40845 21.5546H1.75219ZM1.01507 21.119C1.01507 21.5247 1.34541 21.8546 1.75219 21.8546H4.40845C4.81523 21.8546 5.14557 21.5247 5.14557 21.119C5.14557 20.7119 4.81548 20.3818 4.40845 20.3818H1.75219C1.34516 20.3818 1.01507 20.7119 1.01507 21.119Z"
+                            fill="black"></path>
+                          <path
+                            d="M15.04 20.5329H12.3837C12.0596 20.5329 11.7966 20.7958 11.7966 21.12C11.7966 21.4427 12.0596 21.7057 12.3837 21.7057H15.04C15.3642 21.7057 15.6271 21.4427 15.6271 21.12C15.6271 20.7958 15.3642 20.5329 15.04 20.5329Z"
+                            fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.3837 21.5557C12.1422 21.5557 11.9466 21.3596 11.9466 21.12C11.9466 20.8787 12.1424 20.6829 12.3837 20.6829H15.04C15.2813 20.6829 15.4771 20.8787 15.4771 21.12C15.4771 21.3596 15.2816 21.5557 15.04 21.5557H12.3837ZM11.6466 21.12C11.6466 21.5258 11.977 21.8557 12.3837 21.8557H15.04C15.4468 21.8557 15.7771 21.5258 15.7771 21.12C15.7771 20.713 15.447 20.3829 15.04 20.3829H12.3837C11.9767 20.3829 11.6466 20.713 11.6466 21.12Z"
+                            fill="black"></path>
+                          <path
+                            d="M9.72621 20.5318H7.06846C6.74427 20.5318 6.48133 20.7948 6.48133 21.119C6.48133 21.4416 6.74427 21.7046 7.06846 21.7046H9.72621C10.0504 21.7046 10.3133 21.4416 10.3133 21.119C10.3133 20.7948 10.0504 20.5318 9.72621 20.5318Z"
+                            fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.06846 21.5546C6.82686 21.5546 6.63133 21.3586 6.63133 21.119C6.63133 20.8776 6.82711 20.6818 7.06846 20.6818H9.72621C9.96755 20.6818 10.1633 20.8776 10.1633 21.119C10.1633 21.3586 9.9678 21.5546 9.72621 21.5546H7.06846ZM6.33133 21.119C6.33133 21.5247 6.66168 21.8546 7.06846 21.8546H9.72621C10.133 21.8546 10.4633 21.5247 10.4633 21.119C10.4633 20.7119 10.1332 20.3818 9.72621 20.3818H7.06846C6.66143 20.3818 6.33133 20.7119 6.33133 21.119Z"
+                            fill="black"></path>
+                          <path
+                            d="M20.3578 20.5318H17.7C17.3758 20.5318 17.1129 20.7948 17.1129 21.119C17.1129 21.4416 17.3758 21.7046 17.7 21.7046H20.3578C20.682 21.7046 20.9449 21.4416 20.9449 21.119C20.9449 20.7948 20.682 20.5318 20.3578 20.5318Z"
+                            fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M17.7 21.5546C17.4584 21.5546 17.2629 21.3586 17.2629 21.119C17.2629 20.8776 17.4587 20.6818 17.7 20.6818H20.3578C20.5991 20.6818 20.7949 20.8776 20.7949 21.119C20.7949 21.3586 20.5994 21.5546 20.3578 21.5546H17.7ZM16.9629 21.119C16.9629 21.5247 17.2932 21.8546 17.7 21.8546H20.3578C20.7645 21.8546 21.0949 21.5247 21.0949 21.119C21.0949 20.7119 20.7648 20.3818 20.3578 20.3818H17.7C17.293 20.3818 16.9629 20.7119 16.9629 21.119Z"
+                            fill="black"></path>
+                          <path
+                            d="M15.3506 16.733C11.9966 16.733 9.26716 14.0036 9.26716 10.6496C9.26716 7.29571 11.9966 4.56625 15.3506 4.56625C18.7045 4.56625 21.4324 7.29571 21.4324 10.6496C21.4324 14.0036 18.7045 16.733 15.3506 16.733ZM15.3506 3.00059C11.1331 3.00059 7.7 6.4322 7.7 10.6496C7.7 13.1565 8.92953 15.3661 10.8 16.7629H1.75256C1.33724 16.7629 0.999609 17.1005 0.999609 17.5159C0.999609 17.9327 1.33724 18.2703 1.75256 18.2703H15.0548C15.1548 18.2748 15.2505 18.3002 15.3506 18.3002C19.568 18.3002 22.9996 14.8671 22.9996 10.6496C22.9996 6.4322 19.568 3.00059 15.3506 3.00059Z"
+                            fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.2096 18.1364C15.1662 18.1302 15.1145 18.1228 15.0615 18.1205L15.0548 18.1202L1.75256 18.1203C1.42028 18.1203 1.14961 17.85 1.14961 17.5159C1.14961 17.1834 1.42009 16.9129 1.75256 16.9129H11.2515L10.8897 16.6427C9.05447 15.2722 7.85 13.1059 7.85 10.6496C7.85 6.51508 11.2159 3.15059 15.3506 3.15059C19.4851 3.15059 22.8496 6.51505 22.8496 10.6496C22.8496 14.7843 19.4851 18.1502 15.3506 18.1502C15.3122 18.1502 15.2726 18.1453 15.2236 18.1384C15.2191 18.1378 15.2144 18.1371 15.2096 18.1364ZM15.1817 18.4355C15.2306 18.4424 15.2889 18.4502 15.3506 18.4502C19.6509 18.4502 23.1496 14.9499 23.1496 10.6496C23.1496 6.34936 19.6508 2.85059 15.3506 2.85059C11.0503 2.85059 7.55 6.34932 7.55 10.6496C7.55 13.0508 8.65588 15.1834 10.3682 16.6129H1.75256C1.2544 16.6129 0.849609 17.0177 0.849609 17.5159C0.849609 18.0153 1.25421 18.4203 1.75256 18.4203H15.0512C15.0878 18.4221 15.1243 18.4273 15.1687 18.4336C15.173 18.4342 15.1773 18.4348 15.1817 18.4355ZM9.11716 10.6496C9.11716 14.0864 11.9138 16.883 15.3506 16.883C18.7874 16.883 21.5824 14.0864 21.5824 10.6496C21.5824 7.21291 18.7874 4.41625 15.3506 4.41625C11.9138 4.41625 9.11716 7.21287 9.11716 10.6496ZM15.3506 16.583C12.0795 16.583 9.41716 13.9207 9.41716 10.6496C9.41716 7.37855 12.0795 4.71625 15.3506 4.71625C18.6216 4.71625 21.2824 7.3785 21.2824 10.6496C21.2824 13.9208 18.6216 16.583 15.3506 16.583Z"
+                            fill="black"></path>
+                          <path
+                            d="M15.3512 11.6545C14.7955 11.6545 14.3443 11.2034 14.3443 10.6491C14.3443 10.0934 14.7955 9.64218 15.3512 9.64218C15.907 9.64218 16.3582 10.0934 16.3582 10.6491C16.3582 11.2034 15.907 11.6545 15.3512 11.6545ZM15.3512 8.07502C13.932 8.07502 12.7771 9.22985 12.7771 10.6491C12.7771 12.0669 13.932 13.2217 15.3512 13.2217C16.7705 13.2217 17.9253 12.0669 17.9253 10.6491C17.9253 9.22985 16.7705 8.07502 15.3512 8.07502Z"
+                            fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.3512 13.1217C13.9872 13.1217 12.8771 12.0116 12.8771 10.6491C12.8771 9.28507 13.9872 8.17502 15.3512 8.17502C16.7153 8.17502 17.8253 9.28507 17.8253 10.6491C17.8253 12.0116 16.7153 13.1217 15.3512 13.1217ZM12.6771 10.6491C12.6771 12.1221 13.8768 13.3217 15.3512 13.3217C16.8257 13.3217 18.0253 12.1221 18.0253 10.6491C18.0253 9.17462 16.8257 7.97502 15.3512 7.97502C13.8767 7.97502 12.6771 9.17462 12.6771 10.6491ZM14.2443 10.6491C14.2443 11.2587 14.7403 11.7545 15.3512 11.7545C15.9621 11.7545 16.4582 11.2587 16.4582 10.6491C16.4582 10.0381 15.9622 9.54218 15.3512 9.54218C14.7402 9.54218 14.2443 10.0381 14.2443 10.6491ZM15.3512 11.5545C14.8506 11.5545 14.4443 11.148 14.4443 10.6491C14.4443 10.1486 14.8507 9.74218 15.3512 9.74218C15.8517 9.74218 16.2582 10.1486 16.2582 10.6491C16.2582 11.148 15.8518 11.5545 15.3512 11.5545Z"
+                            fill="black"></path>
+                        </svg>
+                        <div class="size">20.000 g</div>
+                        <div class="br">SHIELD-TEC</div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide comments_item">
+                      <div class="comments_item_top">
+                        <video class="" autoplay="" loop="" playsinline="" webkit-playsinline="true"
+                          style="pointer-events: none; width:100%;">
+                          <source src="./assets/images/comment_img1.mp4" type="video/mp4">Your browser does not support
+                          the HTML5 video element
+                        </video>
+                        <h3>Climate Control</h3>
+                        <p>Thermal Insulation with state-of-the-art materials, combining perfect comfort with high
+                          thermal insulation properties, for true all-day comfort.</p>
+                      </div>
+                      <div class="comments_item_bottom flex a_center">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 7L5 5" stroke="black" stroke-width="2"></path>
+                          <path d="M5 11L5 9" stroke="black" stroke-width="2"></path>
+                          <path
+                            d="M4 20C4 20.5523 4.44772 21 5 21C5.55228 21 6 20.5523 6 20L4 20ZM6 20L6 14L4 14L4 20L6 20Z"
+                            fill="black"></path>
+                          <path
+                            d="M18 20C18 20.5523 18.4477 21 19 21C19.5523 21 20 20.5523 20 20L18 20ZM20 20L20 14L18 14L18 20L20 20Z"
+                            fill="black"></path>
+                          <path
+                            d="M11 20C11 20.5523 11.4477 21 12 21C12.5523 21 13 20.5523 13 20L11 20ZM13 20L13 14L11 14L11 20L13 20Z"
+                            fill="black"></path>
+                          <path
+                            d="M4.77963 2.23855C4.89841 2.10997 5.10159 2.10997 5.22037 2.23855L7.99893 5.24643C8.17642 5.43858 8.04014 5.75 7.77856 5.75H2.22144C1.95986 5.75 1.82358 5.43858 2.00107 5.24643L4.77963 2.23855Z"
+                            fill="black"></path>
+                          <path d="M12 7L12 5" stroke="black" stroke-width="2"></path>
+                          <path d="M12 11L12 9" stroke="black" stroke-width="2"></path>
+                          <path
+                            d="M11.7796 2.23855C11.8984 2.10997 12.1016 2.10997 12.2204 2.23855L14.9989 5.24643C15.1764 5.43858 15.0401 5.75 14.7786 5.75H9.22144C8.95986 5.75 8.82358 5.43858 9.00107 5.24643L11.7796 2.23855Z"
+                            fill="black"></path>
+                          <path d="M19 7L19 5" stroke="black" stroke-width="2"></path>
+                          <path d="M19 11L19 9" stroke="black" stroke-width="2"></path>
+                          <path
+                            d="M18.7796 2.23855C18.8984 2.10997 19.1016 2.10997 19.2204 2.23855L21.9989 5.24643C22.1764 5.43858 22.0401 5.75 21.7786 5.75H16.2214C15.9599 5.75 15.8236 5.43858 16.0011 5.24643L18.7796 2.23855Z"
+                            fill="black"></path>
+                          <line x1="3" y1="14" x2="21" y2="14" stroke="black" stroke-width="2" stroke-linecap="round">
+                          </line>
+                        </svg>
+                        <div class="size">20.000 g</div>
+                        <div class="br">SHIELD-TEC</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comments_scrollbar">
+                  </div>
+                  <div class="comments_bottom">
+                    <div class="tops_nav flex a_center between">
+                      <button class="comments_prev">‹</button>
+                      <button class="comments_next">›</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
           <!-- INFO -->
           <div class="product_info">
             <div class="product_info_top flex">
@@ -354,8 +634,16 @@
       </div>
     </footer>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./assets/js/main.js"></script>
+  <script>
+    Fancybox.bind("[data-fancybox='gallery']", {
+      animated: true,
+      dragToClose: true,
+    });
+  </script>
 </body>
 
 </html>
