@@ -176,10 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesPerView: 2,
       },
       1024: {
-        slidesPerView: 2.1,
-      },
-      1280: {
-        slidesPerView: 3,
+        slidesPerView: 3.1,
       },
     },
 
@@ -269,6 +266,16 @@ const thumbs = new Swiper(".product_thumbs", {
 });
 
 const product_main = new Swiper(".product_main", {
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+  },
   slidesPerView: 2,
   spaceBetween: 10,
   loop: true,
