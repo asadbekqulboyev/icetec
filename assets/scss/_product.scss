@@ -117,6 +117,14 @@
         min-width: 253px;
         font-size: 19px;
       }
+      @media (max-width: 1240px) {
+        min-width: 240px;
+        font-size: 18px;
+      }
+      @media (max-width: 1200px) {
+        min-width: 230px;
+        font-size: 18px;
+      }
     }
     .btn_cart {
       padding: 19px;
@@ -145,6 +153,7 @@
         line-height: normal;
         @media (max-width: 1200px) {
           margin-bottom: -6px;
+          font-size: 39px;
         }
         @media (max-width: 768px) {
           font-size: 40px;

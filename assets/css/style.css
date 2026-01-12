@@ -3342,6 +3342,18 @@
     font-size: 19px;
   }
 }
+@media (max-width: 1240px) {
+  .product .product_info .button {
+    min-width: 240px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1200px) {
+  .product .product_info .button {
+    min-width: 230px;
+    font-size: 18px;
+  }
+}
 .product .product_info .btn_cart {
   padding: 19px;
 }
@@ -3374,6 +3386,7 @@
 @media (max-width: 1200px) {
   .product .product_info .product_price .new_price {
     margin-bottom: -6px;
+    font-size: 39px;
   }
 }
 @media (max-width: 768px) {
