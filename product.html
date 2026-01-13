@@ -433,54 +433,71 @@
             </div>
             <!-- SIZES -->
             <div class="product_sizes">
-              <p>Таблица размеров:</p>
+              <p class="open_size_modal">Таблица размеров: </p>
+
               <div class="product_sizes_items flex">
-                <label>
+                <label data-size="XS">
                   <input type="radio" name="size">
                   <div class="flex column">
-                    <span>S</span>
-                    <span class="disablet">46</span>
-                  </div>
-                </label>
-                <label>
-                  <input type="radio" name="size">
-                  <div class="flex column">
-                    <span>M</span>
-                    <span class="disablet">49</span>
-                  </div>
-                </label>
-                <label>
-                  <input type="radio" name="size">
-                  <div class="flex column">
-                    <span>L</span>
-                    <span class="disablet">50</span>
-                  </div>
-                </label>
-                <label>
-                  <input type="radio" name="size">
-                  <div class="flex column">
-                    <span>XL</span>
-                    <span class="disablet">52</span>
-                  </div>
-                </label>
-                <label>
-                  <input type="radio" name="size">
-                  <div class="flex column">
-                    <span>2XL</span>
-                    <span class="disablet">54</span>
+                    <span>XS</span>
+                    <span class="disablet">42</span>
                   </div>
                 </label>
 
+                <label data-size="S">
+                  <input type="radio" name="size">
+                  <div class="flex column">
+                    <span>S</span>
+                    <span class="disablet">44</span>
+                  </div>
+                </label>
+
+                <label data-size="M">
+                  <input type="radio" name="size">
+                  <div class="flex column">
+                    <span>M</span>
+                    <span class="disablet">46</span>
+                  </div>
+                </label>
+                <label data-size="L">
+                  <input type="radio" name="size">
+                  <div class="flex column">
+                    <span>L</span>
+                    <span class="disablet">48</span>
+                  </div>
+                </label>
+                <label data-size="XL">
+                  <input type="radio" name="size">
+                  <div class="flex column">
+                    <span>XL</span>
+                    <span class="disablet">50</span>
+                  </div>
+                </label>
+
+                <label data-size="2XL">
+                  <input type="radio" name="size">
+                  <div class="flex column">
+                    <span>2XL</span>
+                    <span class="disablet">52</span>
+                  </div>
+                </label>
+
+                <label data-size="3XL">
+                  <input type="radio" name="size">
+                  <div class="flex column">
+                    <span>3XL</span>
+                    <span class="disablet">54</span>
+                  </div>
+                </label>
               </div>
             </div>
-            <!-- TABLE -->
-            <ul class="product_specs">
+            <!-- <ul class="product_specs">
               <li><b>Артикул</b><span> 263728644</span></li>
               <li><b>Состав</b> <span>мембрана; район</span></li>
               <li><b>Пол</b> <span>Мужской</span></li>
               <li><b>Утеплитель</b> <span>тинсулейт</span></li>
               <li><b>Температурный режим</b> <span>от 0 до -20</span></li>
-            </ul>
+            </ul> -->
             <div class="product_caracter">
               <h2 class="product_caracter_title">Характеристики и описание</h2>
               <div class="product_caracter_content">
@@ -633,6 +650,53 @@
         <div class="footer_bottom">© Icetec 2025 / Все права защищены</div>
       </div>
     </footer>
+  </div>
+  <div class="modal">
+    <div class="size_modal_overlay"></div>
+    <div class="size_modal_content">
+      <div class="size_modal_header flex between">
+        <h3>Таблица размеров</h3>
+        <button class="size_modal_close">✕</button>
+      </div>
+
+      <div class="size_table">
+        <div class="size_table_head">
+          <span>RU</span>
+          <span>SIZE</span>
+          <span>Бёдра</span>
+          <span>Талия</span>
+          <span>Грудь</span>
+        </div>
+
+        <div class="size_table_row modal_size_item" data-size="XS">
+          <span>42</span><span>XS</span><span>90–94</span><span>62–66</span><span>82–86</span>
+        </div>
+
+        <div class="size_table_row modal_size_item" data-size="S">
+          <span>44</span><span>S</span><span>94–98</span><span>66–70</span><span>86–90</span>
+        </div>
+
+        <div class="size_table_row modal_size_item" data-size="M">
+          <span>46</span><span>M</span><span>98–102</span><span>70–74</span><span>90–94</span>
+        </div>
+
+        <div class="size_table_row modal_size_item" data-size="L">
+          <span>48</span><span>L</span><span>102–106</span><span>74–78</span><span>94–98</span>
+        </div>
+
+        <div class="size_table_row modal_size_item" data-size="XL">
+          <span>50</span><span>XL</span><span>106–110</span><span>78–82</span><span>98–102</span>
+        </div>
+
+        <div class="size_table_row modal_size_item" data-size="2XL">
+          <span>52</span><span>2XL</span><span>110–114</span><span>82–86</span><span>102–106</span>
+        </div>
+
+        <div class="size_table_row modal_size_item active" data-size="3XL">
+          <span>54</span><span>3XL</span><span>114–118</span><span>86–90</span><span>106–110</span>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>

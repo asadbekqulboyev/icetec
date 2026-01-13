@@ -62,7 +62,7 @@
       zoom: 78%;
     }
     @media (max-width: 1500px) {
-      max-width: calc(35% - 10px);
+      max-width: calc(37% - 10px);
       zoom: 70%;
     }
     @media (max-width: 1270px) {
@@ -114,11 +114,10 @@
       padding: 19px 20px;
       text-align: center;
       @media (max-width: 1440px) {
-        min-width: 253px;
+        min-width: 241px;
         font-size: 19px;
       }
       @media (max-width: 1240px) {
-        min-width: 240px;
         font-size: 18px;
       }
       @media (max-width: 1200px) {
@@ -210,6 +209,13 @@
     }
     .product_sizes {
       margin-top: 43px;
+      .open_size_modal {
+        cursor: pointer;
+        transition: all 0.2s linear;
+        &:hover {
+          color: #f60;
+        }
+      }
       @media (max-width: 992px) {
         margin-top: 28px;
       }
@@ -432,12 +438,12 @@
   gap: 20px;
   width: calc(60% - 10px);
   @media (max-width: 1641px) {
-    max-width: calc(55% - 10px);
+    max-width: calc(54% - 10px);
   }
   @media (max-width: 1500px) {
     zoom: 80%;
     width: 100%;
-    max-width: calc(65% - 10px);
+    max-width: calc(62% - 10px);
   }
   @media (max-width: 1170px) {
     width: 100%;
@@ -489,6 +495,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 5px;
+    cursor: pointer;
   }
 
   .swiper_button_prev {

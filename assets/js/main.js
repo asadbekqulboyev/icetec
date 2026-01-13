@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesPerView: 2,
       },
       1024: {
-        slidesPerView: 3.1,
+        slidesPerView: 3,
       },
     },
 
@@ -215,36 +215,33 @@ const only_mobile = document.querySelector(".only_mobile");
 only_mobile.addEventListener("click", function () {
   document.querySelector(".search_input").classList.toggle("active");
 });
+
 document.addEventListener("DOMContentLoaded", function () {
   const sort_content = document.querySelector(".sort_content");
+  if (!sort_content) return;
   const sort_top = sort_content.querySelector(".sort_top");
   const sort_input = sort_content.querySelector("input");
   const sort_options = sort_content.querySelector(".sort_options");
-  const option_links = sort_options.querySelectorAll("a");
-
-  // TOP bosilganda ochish / yopish
-  if (sort_top) {
-    sort_top.addEventListener("click", function () {
+  const option_links = sort_options ? sort_options.querySelectorAll("a") : [];
+  if (sort_top && sort_options) {
+    sort_top.addEventListener("click", function (e) {
+      e.stopPropagation();
       sort_options.classList.toggle("active");
       sort_top.classList.toggle("active");
     });
   }
-
-  // OPTION bosilganda
   option_links.forEach(function (link) {
     link.addEventListener("click", function (e) {
       e.preventDefault();
-
-      const text = this.querySelector("span").innerText;
-      sort_input.value = text;
-
-      // yopish
+      e.stopPropagation();
+      const span = this.querySelector("span");
+      if (span && sort_input) {
+        sort_input.value = span.innerText;
+      }
       sort_options.classList.remove("active");
       sort_top.classList.remove("active");
     });
   });
-
-  // tashqariga bosilganda yopish (optional, professional)
   document.addEventListener("click", function (e) {
     if (!sort_content.contains(e.target)) {
       sort_options.classList.remove("active");
@@ -252,17 +249,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
 document.addEventListener("click", function (e) {
   const like = e.target.closest(".like");
   if (!like) return;
 
   like.classList.toggle("active");
-});
-
-const thumbs = new Swiper(".product_thumbs", {
-  direction: "vertical",
-  slidesPerView: 4,
-  spaceBetween: 28,
 });
 
 const product_main = new Swiper(".product_main", {
@@ -291,14 +283,11 @@ const product_main = new Swiper(".product_main", {
 
 const PRICE = 14990;
 const DISCOUNT = 30000;
-
 const counts = document.querySelectorAll(".count");
 const plusBtns = document.querySelectorAll(".plus");
 const minusBtns = document.querySelectorAll(".minus");
-
 const sumPrice = document.getElementById("sum_price");
 const total = document.getElementById("total");
-
 function updateTotal() {
   if (!sumPrice || !total || !counts.length) return;
 
@@ -332,15 +321,73 @@ minusBtns.forEach((btn, i) => {
 
 updateTotal();
 const promo_top = document.querySelector(".promo_top");
-promo_top.addEventListener("click", function (e) {
-  e.preventDefault();
-  this.classList.toggle("active");
-  document.querySelector(".code").classList.toggle("active");
+
+if (promo_top) {
+  promo_top.addEventListener("click", function (e) {
+    e.preventDefault();
+    this.classList.toggle("active");
+
+    const code = document.querySelector(".code");
+    if (code) {
+      code.classList.toggle("active");
+    }
+  });
+}
+const codeEl = document.querySelector(".code");
+const copyEl = document.querySelector(".copy");
+if (codeEl && copyEl) {
+  codeEl.addEventListener("click", function () {
+    navigator.clipboard.writeText(this.textContent);
+    copyEl.classList.add("active");
+
+    setTimeout(() => {
+      copyEl.classList.remove("active");
+    }, 7000);
+  });
+}
+document.addEventListener("DOMContentLoaded", () => {
+  const openBtn = document.querySelector(".open_size_modal");
+  const modal = document.querySelector(".modal"); // ✅ TO‘G‘RILANDI
+  const closeBtn = modal?.querySelector(".size_modal_close");
+  const overlay = modal?.querySelector(".size_modal_overlay");
+
+  if (!openBtn || !modal) return;
+
+  const modalItems = modal.querySelectorAll(".modal_size_item");
+  const productLabels = document.querySelectorAll(".product_sizes_items label");
+
+  openBtn.addEventListener("click", () => {
+    modal.classList.add("open");
+  });
+
+  closeBtn?.addEventListener("click", () => {
+    modal.classList.remove("open");
+  });
+
+  overlay?.addEventListener("click", () => {
+    modal.classList.remove("open");
+  });
+
+  modalItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      const size = item.dataset.size;
+
+      modalItems.forEach((i) => i.classList.remove("active"));
+      item.classList.add("active");
+
+      productLabels.forEach((label) => {
+        const input = label.querySelector("input");
+        if (!input) return;
+
+        if (label.dataset.size === size) {
+          input.checked = true;
+          label.classList.add("active");
+        } else {
+          label.classList.remove("active");
+        }
+      });
+
+      modal.classList.remove("open");
+    });
+  });
 });
-document.querySelector(".code").addEventListener("click", function () {
-  navigator.clipboard.writeText(this.textContent);
-  document.querySelector(".copy").classList.toggle("active");
-});
-setInterval(() => {
-  document.querySelector(".copy").classList.remove("active");
-}, 7000);

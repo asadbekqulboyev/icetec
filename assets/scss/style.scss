@@ -14,6 +14,7 @@
 @import "shop";
 @import "order";
 @import "comments";
+@import "modal";
 
 //pages
 @import "catalog";
@@ -35,18 +36,18 @@ body {
   font-weight: 500;
   line-height: normal;
 }
-main{
+main {
   padding-top: 120px;
-  @media (max-width:1460px) {
+  @media (max-width: 1460px) {
     padding-top: 113px;
   }
-  @media (max-width:1400px) {
+  @media (max-width: 1400px) {
     padding-top: 96px;
   }
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     padding-top: 91px;
   }
-  @media (max-width:480px) {
+  @media (max-width: 480px) {
     padding-top: 73px;
   }
 }
