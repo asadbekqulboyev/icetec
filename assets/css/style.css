@@ -2387,6 +2387,19 @@
   }
 }
 
+.filter_button {
+  float: right;
+  padding: 10px 12px;
+  font-size: 14px;
+  background: #f0efef;
+  border: 1px solid #f50;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  outline: none;
+  color: #f50;
+}
+
 .catalog {
   padding-top: 0px;
 }
@@ -2668,9 +2681,11 @@
 }
 .catalog .product_item_top .like {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 18px;
+  right: 20px;
   cursor: pointer;
+  width: 30px;
+  height: 30px;
 }
 @media (max-width: 556px) {
   .catalog .product_item_top .like {
