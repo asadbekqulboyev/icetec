@@ -2390,13 +2390,14 @@
 .filter_button {
   float: right;
   padding: 10px 12px;
-  font-size: 14px;
-  background: #f0efef;
+  font-size: 16px;
+  background: #ffffff;
   border: 1px solid #f50;
   display: flex;
   gap: 8px;
   align-items: center;
   outline: none;
+  cursor: pointer;
   color: #f50;
 }
 
