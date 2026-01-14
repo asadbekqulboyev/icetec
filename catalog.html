@@ -518,6 +518,134 @@
       </div>
     </footer>
   </div>
+  <div class="modal modal_filters" data-modal="filters">
+    <div class="modal_overlay"></div>
+    <div class="modal_wrapper" role="dialog" aria-modal="true">
+      <div class="modal_container">
+        <div class="modal_header flex between a_center">
+          <h5 class="modal_title">Filters</h5>
+          <button class="modal_close" aria-label="Close">
+            ✕
+          </button>
+        </div>
+        <div class="modal_content">
+          <div class="filter_block">
+            <button class="filter_toggle">
+              <span>Sort</span>
+              <span class="filter_value">Hot products</span>
+            </button>
+            <div class="filter_dropdown">
+              <label class="filter_option">
+                <input type="radio" name="sort" checked>
+                <span class="radio_mark"></span>
+                <span class="radio_text">Hot products</span>
+              </label>
+              <label class="filter_option">
+                <input type="radio" name="sort">
+                <span class="radio_mark"></span>
+                <span class="radio_text">Cheapest first</span>
+              </label>
+              <label class="filter_option">
+                <input type="radio" name="sort">
+                <span class="radio_mark"></span>
+                <span class="radio_text">Latest first</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- GENDER -->
+          <div class="filter_block">
+            <button class="filter_toggle">
+              <span>Gender</span>
+            </button>
+
+            <div class="filter_dropdown">
+              <label class="filter_option">
+                <input type="radio" name="gender" checked>
+                <span class="radio_mark"></span>
+                <span class="radio_text">All</span>
+              </label>
+
+              <label class="filter_option">
+                <input type="radio" name="gender">
+                <span class="radio_mark"></span>
+                <span class="radio_text">Women</span>
+              </label>
+
+              <label class="filter_option">
+                <input type="radio" name="gender">
+                <span class="radio_mark"></span>
+                <span class="radio_text">Men</span>
+              </label>
+            </div>
+          </div>
+
+
+          <!-- SIZES -->
+          <div class="filter_block">
+            <button class="filter_toggle">
+              <span>Sizes</span>
+            </button>
+
+            <div class="filter_dropdown grid">
+              <label class="filter_checkbox">
+                <input type="checkbox">
+                <span class="checkbox_mark"></span>
+                <span class="checkbox_text">XS</span>
+              </label>
+
+              <label class="filter_checkbox">
+                <input type="checkbox">
+                <span class="checkbox_mark"></span>
+                <span class="checkbox_text">S</span>
+              </label>
+
+              <label class="filter_checkbox">
+                <input type="checkbox">
+                <span class="checkbox_mark"></span>
+                <span class="checkbox_text">M</span>
+              </label>
+
+              <label class="filter_checkbox">
+                <input type="checkbox">
+                <span class="checkbox_mark"></span>
+                <span class="checkbox_text">L</span>
+              </label>
+
+              <label class="filter_checkbox">
+                <input type="checkbox">
+                <span class="checkbox_mark"></span>
+                <span class="checkbox_text">XL</span>
+              </label>
+            </div>
+
+          </div>
+
+          <!-- COLOR -->
+          <div class="filter_block">
+            <button class="filter_toggle">
+              <span>Color</span>
+            </button>
+
+            <div class="filter_colors">
+              <button class="color_item" style="background:#000"></button>
+              <button class="color_item" style="background:#F60"></button>
+              <button class="color_item" style="background:#999"></button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="modal_footer flex between">
+          <button class="btn btn_outline">Reset</button>
+          <button class="btn btn_primary">Confirm</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>

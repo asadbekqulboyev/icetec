@@ -391,3 +391,71 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const filter_button = document.querySelector(".filter_button");
+  const modal = document.querySelector(".modal_filters");
+  const overlay = modal.querySelector(".modal_overlay");
+  const closeBtn = modal.querySelector(".modal_close");
+  function closeModal() {
+    modal.classList.remove("open");
+  }
+  closeBtn.addEventListener("click", closeModal);
+  overlay.addEventListener("click", closeModal);
+
+  document.querySelectorAll(".filter_toggle").forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+      const block = toggle.closest(".filter_block");
+      document.querySelectorAll(".filter_block").forEach((b) => {
+        if (b !== block) b.classList.remove("open");
+      });
+
+      block.classList.toggle("open");
+    });
+  });
+  const sortBlock = document.querySelector(".filter_block");
+  const sortValue = sortBlock.querySelector(".filter_value");
+
+  sortBlock.querySelectorAll('input[type="radio"]').forEach((radio) => {
+    radio.addEventListener("change", () => {
+      const text = radio
+        .closest("label")
+        .querySelector(".radio_text").innerText;
+      sortValue.innerText = text;
+    });
+  });
+
+  document.querySelectorAll(".color_item").forEach((color) => {
+    color.addEventListener("click", () => {
+      document
+        .querySelectorAll(".color_item")
+        .forEach((c) => c.classList.remove("active"));
+
+      color.classList.add("active");
+    });
+  });
+
+  const resetBtn = modal.querySelector(".btn_outline");
+  resetBtn.addEventListener("click", () => {
+    modal
+      .querySelectorAll('input[type="radio"]')
+      .forEach((r) => (r.checked = false));
+    modal.querySelector('input[name="sort"]').checked = true;
+    sortValue.innerText = "Hot products";
+    modal
+      .querySelectorAll('input[type="checkbox"]')
+      .forEach((c) => (c.checked = false));
+    document
+      .querySelectorAll(".color_item")
+      .forEach((c) => c.classList.remove("active"));
+    document
+      .querySelectorAll(".filter_block")
+      .forEach((b) => b.classList.remove("open"));
+  });
+
+  modal.querySelector(".btn_primary").addEventListener("click", () => {
+    closeModal();
+  });
+  filter_button.addEventListener("click", () => {
+    modal.classList.add("open");
+  });
+});
