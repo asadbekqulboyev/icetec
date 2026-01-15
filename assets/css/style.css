@@ -1527,14 +1527,14 @@
   font-size: 14px;
 }
 .shop_content .summary {
-  max-width: 605px;
+  max-width: 505px;
   background: #f7f7f7;
   padding: 36px 38px 38px 40px;
   border-radius: 8px;
 }
 @media (max-width: 1200px) {
   .shop_content .summary {
-    max-width: 485px;
+    max-width: 435px;
     width: 100%;
   }
 }
@@ -4198,6 +4198,15 @@
 @media (max-width: 1430px) {
   .product_actions {
     gap: 24px;
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: -75px;
+  }
+}
+@media (max-width: 1200px) {
+  .product_actions {
+    padding-top: 0px;
+    margin-bottom: 0px;
   }
 }
 @media (max-width: 768px) {

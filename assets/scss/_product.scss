@@ -529,7 +529,15 @@
 .product_actions {
   @media (max-width: 1430px) {
     gap: 24px;
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: -75px;
   }
+  @media (max-width: 1200px) {
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+
   @media (max-width: 768px) {
     flex-direction: row !important;
     gap: 14px;
