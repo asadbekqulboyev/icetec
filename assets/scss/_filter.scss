@@ -1,13 +1,26 @@
 .filter_button {
   float: right;
   padding: 10px 12px;
-  font-size: 16px;
+  font-size: 18px;
   background: #ffffff;
   border: 1px solid #f50;
   display: flex;
   gap: 8px;
   align-items: center;
+  justify-content: center;
   outline: none;
+  min-width: 200px;
   cursor: pointer;
   color: #f50;
+  @media (max-width: 768px) {
+    min-width: 120px;
+    font-size: 16px;
+  }
+}
+.modal_footer {
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  z-index: 22;
 }

@@ -1,3 +1,6 @@
+:root {
+  --main_color: #f60;
+}
 .modal {
   position: fixed;
   inset: 0;
@@ -106,9 +109,6 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.25s ease, visibility 0.25s ease;
-  :root {
-    --main_color: #f60;
-  }
 
   &.open {
     opacity: 1;
@@ -121,7 +121,7 @@
     z-index: 1000;
     &_content {
       overflow: auto;
-      height: calc(100% - 60px);
+      height: calc(100% - 120px);
     }
   }
 
