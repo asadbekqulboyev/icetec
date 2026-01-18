@@ -3734,10 +3734,10 @@
   }
 }
 .product .product_info .button {
-  width: 100%;
-  min-width: 293px;
   padding: 19px 20px;
   text-align: center;
+  min-width: fit-content;
+  width: calc(50% - 10px);
 }
 @media (max-width: 1440px) {
   .product .product_info .button {
@@ -3957,7 +3957,7 @@
   }
 }
 .product_caracter {
-  margin-top: 79px;
+  margin-top: 50px;
 }
 @media (max-width: 992px) {
   .product_caracter {
@@ -4205,18 +4205,18 @@
   background: #000;
 }
 
+.product_actions {
+  padding-top: 50px;
+}
 @media (max-width: 1430px) {
   .product_actions {
     gap: 24px;
     position: relative;
-    padding-top: 50px;
-    margin-bottom: -75px;
   }
 }
 @media (max-width: 1200px) {
   .product_actions {
-    padding-top: 0px;
-    margin-bottom: 0px;
+    padding-top: 30px;
   }
 }
 @media (max-width: 768px) {

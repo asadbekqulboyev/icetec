@@ -109,10 +109,10 @@
       }
     }
     .button {
-      width: 100%;
-      min-width: 293px;
       padding: 19px 20px;
       text-align: center;
+      min-width: fit-content;
+      width: calc(50% - 10px);
       @media (max-width: 1440px) {
         min-width: 241px;
         font-size: 19px;
@@ -301,7 +301,7 @@
     }
   }
   &_caracter {
-    margin-top: 79px;
+    margin-top: 50px;
     @media (max-width: 992px) {
       margin-top: 49px;
     }
@@ -333,7 +333,6 @@
         @media (max-width: 1200px) {
           font-size: 20px;
           margin-bottom: 20px;
-          
         }
         @media (max-width: 768px) {
           font-size: 16px;
@@ -532,15 +531,13 @@
 }
 
 .product_actions {
+  padding-top: 50px;
   @media (max-width: 1430px) {
     gap: 24px;
     position: relative;
-    padding-top: 50px;
-    margin-bottom: -75px;
   }
   @media (max-width: 1200px) {
-    padding-top: 0px;
-    margin-bottom: 0px;
+    padding-top: 30px;
   }
 
   @media (max-width: 768px) {
