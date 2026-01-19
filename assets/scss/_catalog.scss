@@ -51,6 +51,9 @@
     max-width: 100%;
     .section_title.none {
       margin-left: -6px;
+      @media (max-width: 1400px) {
+        font-size: 38px;
+      }
     }
   }
   .section_title:not(.none) {
@@ -173,6 +176,9 @@
     flex-wrap: wrap;
     margin-top: 48px;
     gap: 30px 6px;
+    @media (max-width: 1300px) {
+      margin-top: 28px;
+    }
     @media (max-width: 840px) {
       gap: 40px 6px;
       margin-top: 28px;

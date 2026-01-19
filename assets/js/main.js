@@ -186,6 +186,55 @@ document.addEventListener("DOMContentLoaded", () => {
       setTranslate: equalizeCommentsHeight,
     },
   });
+  const product_comments_slider2 = new Swiper(
+    ".coments_last .product_comments_slider",
+    {
+      loop: false,
+      speed: 500,
+      spaceBetween: 8,
+      freeMode: {
+        enabled: true,
+        momentum: true,
+        momentumRatio: 1,
+        momentumBounce: false,
+      },
+
+      mousewheel: {
+        forceToAxis: true,
+        sensitivity: 1,
+        releaseOnEdges: true,
+      },
+
+      navigation: {
+        nextEl: ".coments_last .comments_next",
+        prevEl: ".coments_last .comments_prev",
+      },
+
+      scrollbar: {
+        el: ".coments_last .comments_scrollbar",
+        draggable: true,
+        hide: false,
+      },
+
+      breakpoints: {
+        0: {
+          slidesPerView: 1.1,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+      },
+
+      on: {
+        init: equalizeCommentsHeight,
+        resize: equalizeCommentsHeight,
+        setTranslate: equalizeCommentsHeight,
+      },
+    },
+  );
   function equalizeCommentsHeight() {
     const items = document.querySelectorAll(".comments_item");
     let maxHeight = 0;
