@@ -311,6 +311,7 @@
 }
 .header .has_menu img {
   transition: all 0.2s linear;
+  width: 15px;
 }
 .header .has_menu:hover img {
   transform: rotate(-180deg);
