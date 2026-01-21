@@ -88,6 +88,11 @@
   gap: 16px 32px;
   transition: all 0.2s linear;
 }
+@media (max-width: 1585px) {
+  .header .nav_list {
+    gap: 18px;
+  }
+}
 @media (max-width: 1544px) {
   .header .nav_list {
     gap: 24px;
@@ -273,6 +278,61 @@
   }
   .header .mobile_actions .only_mobile img {
     transform: scale(1.08, 1);
+  }
+}
+.header .submenu {
+  display: none;
+}
+.header a img {
+  transition: all 0.2s linear;
+}
+.header .submenu_list {
+  position: absolute;
+  top: 64%;
+  background: white;
+  padding: 12px 22px;
+  gap: 16px;
+  box-shadow: 0 2px 2px rgb(255, 196, 157);
+  border-radius: 0 0 8px 8px;
+  transition: all 0.2s linear;
+  opacity: 0;
+  visibility: hidden;
+}
+@media (max-width: 1140px) {
+  .header .submenu_list {
+    position: static;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+}
+.header .submenu_list a {
+  font-size: 24px;
+}
+.header .has_menu img {
+  transition: all 0.2s linear;
+}
+.header .has_menu:hover img {
+  transform: rotate(-180deg);
+}
+.header .has_menu:hover .submenu_list {
+  opacity: 1;
+  visibility: inherit;
+}
+@media (max-width: 1140px) {
+  .header .has_menu:hover .submenu_list {
+    position: static;
+    height: max-content;
+    overflow: hidden;
+    padding: 12px 12px;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 16px 0;
+  }
+}
+@media (max-width: 1140px) {
+  .header .has_menu:hover .submenu_list a {
+    font-size: 15px;
   }
 }
 
@@ -3031,7 +3091,7 @@
   }
 }
 .catalog .product_item_prices .old_price {
-  text-decoration-line: line-through;
+  font-size: 32px;
 }
 @media (max-width: 430px) {
   .catalog .product_item_prices .old_price {

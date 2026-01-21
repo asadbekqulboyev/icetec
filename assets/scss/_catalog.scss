@@ -241,7 +241,8 @@
         margin-top: 7px;
       }
       .old_price {
-        text-decoration-line: line-through;
+        font-size: 32px;
+        
         @media (max-width: 430px) {
           font-size: 10px;
           text-decoration-line: line-through;

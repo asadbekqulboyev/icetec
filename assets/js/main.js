@@ -507,3 +507,52 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.classList.add("open");
   });
 });
+// document.addEventListener("DOMContentLoaded", function () {
+//   const navLinks = document.querySelectorAll(".nav_list li a");
+//   const wrapper = document.querySelector(".mega_menu_wrapper");
+//   const menus = document.querySelectorAll(".mega_menu");
+
+//   const menuMap = {
+//     Женщинам: "women",
+//     Мужчинам: "men",
+//     Детям: "kids",
+//   };
+
+//   function closeAllMenus() {
+//     menus.forEach((menu) => menu.classList.remove("active"));
+//     wrapper.classList.remove("active");
+//   }
+
+//   navLinks.forEach((link) => {
+//     link.addEventListener("click", function (e) {
+//       const text = link.textContent.trim();
+//       const targetMenu = menuMap[text];
+
+//       if (!targetMenu) return;
+
+//       e.preventDefault();
+
+//       const currentMenu = document.querySelector(
+//         `.mega_menu[data-menu="${targetMenu}"]`,
+//       );
+
+//       if (currentMenu.classList.contains("active")) {
+//         closeAllMenus();
+//         return;
+//       }
+
+//       closeAllMenus();
+//       wrapper.classList.add("active");
+//       currentMenu.classList.add("active");
+//     });
+//   });
+
+//   document.addEventListener("click", function (e) {
+//     if (
+//       !e.target.closest(".header") &&
+//       !e.target.closest(".mega_menu_wrapper")
+//     ) {
+//       closeAllMenus();
+//     }
+//   });
+// });
