@@ -247,10 +247,11 @@
   }
   .submenu_list {
     position: absolute;
-    top: 64%;
+    top: 200%;
     background: #ffff;
-    padding: 12px 22px;
+    padding: 22px 22px;
     gap: 16px;
+    left: -25px;
     box-shadow: 0 2px 2px rgb(255, 196, 157);
     border-radius: 0 0 8px 8px;
     transition: all 0.2s linear;
@@ -264,7 +265,19 @@
     }
     a {
       font-size: 24px;
+      @media (max-width: 1754px) {
+        font-size: 22px;
+      }
+      @media (max-width: 1544px) {
+        font-size: 18px;
+      }
+      @media (max-width: 1320px) {
+        font-size: 16px;
+      }
     }
+  }
+  .has_menu {
+    position: relative;
   }
   .has_menu img {
     transition: all 0.2s linear;
